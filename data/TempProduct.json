@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 1,
+    "title": "ZZ Plant Mini",
+    "pricevnd": 910000.0,
+    "currency": "VND",
+    "sku": "PL-1150BE",
+    "category": "Cây ngoài trời",
+    "description": "ZZ Plant Mini là lựa chọn hoàn hảo cho người mới bắt đầu, mang vẻ đẹp hiện đại mà không đòi hỏi nhiều công chăm sóc.",
+    "longdescription": "Với những chiếc lá xanh bóng, mọng nước, ZZ Plant Mini mang lại vẻ đẹp sang trọng cho mọi góc nhà. Cây cực kỳ dễ trồng, phát triển tốt ngay cả trong điều kiện ánh sáng yếu, là sự bổ sung tuyệt vời cho bộ sưu tập của bạn.",
+    "images": [
+      "/tempimage/product_detail/huongthao.png",
+      "/tempimage/product_detail/huongthao10.png",
+      "/tempimage/product_detail/huongthao2.png",
+      "/tempimage/product_detail/huongthao3.png",
+      "/tempimage/product_detail/huongthao4.png"
+    ],
+    "stock": 28,
+    "botanical": {
+      "common_name": "ZZ Plant",
+      "scientific_name": "Zz xa34ef9",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "193 cm",
+      "care_tips": "Place ZZ Plant in low light / shade. Keep away from drafts and extreme temperatures. Feed monthly during growing season."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 2,
+    "title": "Rubber Plant Deluxe",
+    "pricevnd": 646000.0,
+    "currency": "VND",
+    "sku": "PL-185C2D",
+    "category": "Cây trong nhà",
+    "description": "Thêm một điểm nhấn ấn tượng cho phòng khách của bạn với Rubber Plant Deluxe, nổi bật với những tán lá lớn đầy sức sống.",
+    "longdescription": "Rubber Plant Deluxe (Cây Đa Búp Đỏ) không chỉ gây ấn tượng bởi những chiếc lá to, đậm màu mà còn bởi khả năng thích nghi tuyệt vời. Đây là lựa chọn lý tưởng để tạo mảng xanh ấn tượng cho gia đình hay văn phòng.",
+    "images": [
+      "/tempimage/product_detail/huongthao5.png",
+      "/tempimage/product_detail/huongthao6.png",
+      "/tempimage/product_detail/huongthao7.png",
+      "/tempimage/product_detail/huongthao8.png",
+      "/tempimage/product_detail/huongthao9.png"
+    ],
+    "stock": 71,
+    "botanical": {
+      "common_name": "Rubber Plant",
+      "scientific_name": "Rubber x0eb3ce",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "76 cm",
+      "care_tips": "Place Rubber Plant in full sun. Water: Regular (2–3 times/week). Allow topsoil to dry between waterings."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 3,
+    "title": "Hoya Variegated",
+    "pricevnd": 390000.0,
+    "currency": "VND",
+    "sku": "PL-DE5363",
+    "category": "Cây ngoài trời",
+    "description": "Khám phá vẻ đẹp độc đáo của Hoya Variegated, dòng cây leo với những chiếc lá viền kem hoặc hồng lãng mạn.",
+    "longdescription": "Hoya Variegated (Cẩm Cù Lá Đốm) là sự lựa chọn tuyệt vời cho các giỏ treo hoặc để leo giàn. Những chiếc lá đốm màu độc đáo cùng chùm hoa hình ngôi sao tỏa hương thơm ngát sẽ làm say đắm bất kỳ ai.",
+    "images": [
+      "/tempimage/products/cay-hoa-tim-rim.png",
+      "/tempimage/products/cay-hong-mon-nhung.png",
+      "/tempimage/products/cay-la-rong.png",
+      "/tempimage/products/caytre.png",
+      "/tempimage/products/caytrongnha.png"
+    ],
+    "stock": 97,
+    "botanical": {
+      "common_name": "Hoya",
+      "scientific_name": "Hoya xfbcbb0",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "43 cm",
+      "care_tips": "Allow topsoil to dry between waterings. Keep away from drafts and extreme temperatures. Feed monthly during growing season."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 4,
+    "title": "Aloe Vera Baby",
+    "pricevnd": 128000.0,
+    "currency": "VND",
+    "sku": "PL-5C6D39",
+    "category": "Cây lọc không khí",
+    "description": "Bắt đầu bộ sưu tập của bạn với Aloe Vera Baby, phiên bản mini xinh xắn của loài cây Nha Đam quen thuộc.",
+    "longdescription": "Không chỉ là một loại cây cảnh đẹp mắt, Aloe Vera (Nha Đam) còn được biết đến với khả năng thanh lọc không khí và nhiều công dụng y học. Phiên bản 'Baby' nhỏ gọn rất phù hợp để trang trí bàn làm việc.",
+    "images": [
+      "/tempimage/products/caytrongnha2.png",
+      "/tempimage/products/senda.png",
+      "/tempimage/products/senda-2.png",
+      "/tempimage/products/trauba.png",
+      "/tempimage/products/trauba-1.png"
+    ],
+    "stock": 68,
+    "botanical": {
+      "common_name": "Aloe Vera",
+      "scientific_name": "Aloe xdc8695",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "40 cm",
+      "care_tips": "Keep away from drafts and extreme temperatures. Water: Regular (2–3 times/week). Allow topsoil to dry between waterings."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 5,
+    "title": "Snake Plant Mini",
+    "pricevnd": 820000.0,
+    "currency": "VND",
+    "sku": "PL-ED2F99",
+    "category": "Bộ cây mini",
+    "description": "Mang vẻ đẹp kiến trúc vào không gian nhỏ với Snake Plant Mini, loài cây 'bất tử' dành cho người bận rộn.",
+    "longdescription": "Snake Plant (Cây Lưỡi Hổ) nổi tiếng với khả năng lọc không khí vượt trội và sức sống mãnh liệt. Phiên bản mini là lựa chọn hoàn hảo để thanh lọc không khí trên bàn làm việc hoặc phòng ngủ.",
+    "images": [
+      "/tempimage/Product_Detail/huongthao8.png",
+      "/tempimage/products/unsplash_a7rzcegedb4.png",
+      "/tempimage/products/unsplash_dM317CbttyY.png",
+      "/tempimage/products/unsplash_gSQbip5HHuc.png",
+      "/tempimage/products/unsplash_ruQHpukrN7c.png"
+    ],
+    "stock": 37,
+    "botanical": {
+      "common_name": "Snake Plant",
+      "scientific_name": "Snake x612f60",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "45 cm",
+      "care_tips": "Feed monthly during growing season. Allow topsoil to dry between waterings. Place Snake Plant in full sun."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 6,
+    "title": "Bird's Nest Fern Variegated",
+    "pricevnd": 314000.0,
+    "currency": "VND",
+    "sku": "PL-DB5F41",
+    "category": "Cây mọng nước",
+    "description": "Thêm nét chấm phá nhiệt đới với Bird's Nest Fern Variegated, có những tán lá lượn sóng viền màu độc đáo.",
+    "longdescription": "Với những tán lá lượn sóng tựa như một tổ chim, phiên bản Variegated của Bird's Nest Fern (Dương xỉ tổ chim) mang lại vẻ đẹp độc đáo. Cây ưa độ ẩm và ánh sáng gián tiếp, rất hợp cho phòng tắm hoặc bếp.",
+    "images": [
+      "/tempimage/products/unsplash_sUQ_LEqfzTY.png",
+      "/tempimage/products/unsplash_T0inbt7nRME.png",
+      "/tempimage/products/unsplash_ukh7l-aag8a.png",
+      "/tempimage/products/unsplash_sUQ_LEqfzTY.png",
+      "/tempimage/products/unsplash_ymjnpfg46fq.png"
+    ],
+    "stock": 89,
+    "botanical": {
+      "common_name": "Bird's Nest Fern",
+      "scientific_name": "Bird's x4586de",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "156 cm",
+      "care_tips": "Feed monthly during growing season. Keep away from drafts and extreme temperatures. Water: Moderate (once a week)."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 7,
+    "title": "Spider Plant Deluxe",
+    "pricevnd": 846000.0,
+    "currency": "VND",
+    "sku": "PL-A7188D",
+    "category": "Bộ cây mini",
+    "description": "Sở hữu ngay 'cỗ máy' lọc không khí tự nhiên với Spider Plant Deluxe, loài cây dễ nhân giống và chăm sóc.",
+    "longdescription": "Spider Plant (Cây Mẫu Tử) được yêu thích vì khả năng sinh sản các cây con ('spiders') từ thân mẹ. Phiên bản Deluxe với kích thước lớn, xum xuê, là lựa chọn tuyệt vời cho các giỏ treo.",
+    "images": [
+      "/tempimage/products/unsplash_yrxuxvy4sq4.png",
+      "/tempimage/products/unsplash_ywrybp-6p8c.png",
+      "/tempimage/products/xuongrong.png",
+      "/tempimage/servicepage/frame 17.png",
+      "/tempimage/servicepage/frame 18.png"
+    ],
+    "stock": 98,
+    "botanical": {
+      "common_name": "Spider Plant",
+      "scientific_name": "Spider x73eeae",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "28 cm",
+      "care_tips": "Allow topsoil to dry between waterings. Place Spider Plant in partial sun. Feed monthly during growing season."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 8,
+    "title": "Begonia Premium",
+    "pricevnd": 432000.0,
+    "currency": "VND",
+    "sku": "PL-FFDDB9",
+    "category": "Cây nhiệt đới",
+    "description": "Thắp sáng không gian của bạn với vẻ đẹp rực rỡ và đa dạng của dòng cây Begonia (Thu Hải Đường) cao cấp.",
+    "longdescription": "Begonia Premium là tuyển tập những giống Thu Hải Đường có hoa và lá đẹp nhất. Với màu sắc đa dạng từ đỏ, hồng, cam đến các loại lá có hoa văn độc đáo, chúng là điểm nhấn hoàn hảo cho bất kỳ khu vườn hay ban công nào.",
+    "images": [
+      "/tempimage/servicepage/frame 19.png",
+      "/tempimage/cattia.png",
+      "/tempimage/chatha.png",
+      "/tempimage/cutplant.png",
+      "/tempimage/dichvutrongco.png"
+    ],
+    "stock": 63,
+    "botanical": {
+      "common_name": "Begonia",
+      "scientific_name": "Begonia x432699",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "56 cm",
+      "care_tips": "Water: Moderate (once a week). Allow topsoil to dry between waterings. Feed monthly during growing season."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 9,
+    "title": "Begonia Compact",
+    "pricevnd": 1085000.0,
+    "currency": "VND",
+    "sku": "PL-B0333D",
+    "category": "Cây lọc không khí",
+    "description": "Vẻ đẹp rực rỡ của Thu Hải Đường trong một phiên bản nhỏ gọn, phù hợp cho không gian bàn làm việc và cửa sổ.",
+    "longdescription": "Dòng Begonia Compact được chọn lọc từ những giống Thu Hải Đường có kích thước nhỏ gọn nhưng vẫn cho hoa và lá đẹp mắt. Cây không đòi hỏi nhiều không gian, dễ dàng mang lại màu sắc tươi vui cho góc nhỏ của bạn.",
+    "images": [
+      "/tempimage/introduction_item1.png",
+      "/tempimage/introduction_item2.png",
+      "/tempimage/introduction_item3.png",
+      "/tempimage/introduction_landingpage.png",
+      "/tempimage/news_1.png"
+    ],
+    "stock": 46,
+    "botanical": {
+      "common_name": "Begonia",
+      "scientific_name": "Begonia x432699",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "150 cm",
+      "care_tips": "Place Begonia in full sun. Keep away from drafts and extreme temperatures. Feed monthly during growing season."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 10,
+    "title": "Peace Lily Baby",
+    "pricevnd": 842000.0,
+    "currency": "VND",
+    "sku": "PL-BEEBE2",
+    "category": "Cây hoa",
+    "description": "Mang sự thanh lịch và yên bình vào nhà với Peace Lily Baby, nổi bật với những bông hoa trắng muốt.",
+    "longdescription": "Peace Lily (Cây Lan Ý) không chỉ đẹp với những bông hoa trắng trang nhã trên nền lá xanh đậm, mà còn là một trong những loại cây lọc không khí hàng đầu theo NASA. Phiên bản 'Baby' phù hợp với mọi không gian.",
+    "images": [
+      "/tempimage/news_2.png",
+      "/tempimage/news_3.png",
+      "/tempimage/policy_landingpage.png",
+      "/tempimage/temp_carousel.png",
+      "/tempimage/temp_dich_vu.png"
+    ],
+    "stock": 8,
+    "botanical": {
+      "common_name": "Peace Lily",
+      "scientific_name": "Peace x7acbad",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "172 cm",
+      "care_tips": "Keep away from drafts and extreme temperatures. Place Peace Lily in full sun. Allow topsoil to dry between waterings."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 11,
+    "title": "ZZ Plant Premium",
+    "pricevnd": 1071000.0,
+    "currency": "VND",
+    "sku": "PL-3D3624",
+    "category": "Bộ cây mini",
+    "description": "Nâng tầm đẳng cấp không gian với ZZ Plant Premium, phiên bản lớn và xum xuê của dòng cây kim tiền hiện đại.",
+    "longdescription": "Phiên bản Premium của ZZ Plant (Cây Kim Tiền) được tuyển chọn từ những cây lớn, có dáng đẹp và tán lá xum xuê nhất. Đây là lựa chọn hoàn hảo để tạo điểm nhấn sang trọng cho sảnh lớn, phòng khách hoặc văn phòng.",
+    "images": [
+      "/tempimage/temp-sanpham-purple-flower.png",
+      "/tempimage/thicongcanhquan.png",
+      "/tempimage/trongcaygiadinh.png",
+      "/tempimage/product_detail/huongthao.png",
+      "/tempimage/product_detail/huongthao10.png"
+    ],
+    "stock": 34,
+    "botanical": {
+      "common_name": "ZZ Plant",
+      "scientific_name": "Zz xa34ef9",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "95 cm",
+      "care_tips": "Feed monthly during growing season. Place ZZ Plant in full sun. Allow topsoil to dry between waterings."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 12,
+    "title": "Aloe Vera Classic",
+    "pricevnd": 933000.0,
+    "currency": "VND",
+    "sku": "PL-3C106E",
+    "category": "Cây hoa",
+    "description": "Sở hữu ngay một chậu Aloe Vera Classic, dòng Nha Đam kinh điển với kích thước vừa phải và công dụng đa năng.",
+    "longdescription": "Phiên bản Classic của Aloe Vera (Nha Đam) có kích thước trung bình, phù hợp để đặt ở góc phòng hoặc ban công. Cây vừa có tác dụng trang trí, lọc không khí, vừa có thể được sử dụng cho mục đích làm đẹp.",
+    "images": [
+      "/tempimage/product_detail/huongthao2.png",
+      "/tempimage/product_detail/huongthao3.png",
+      "/tempimage/product_detail/huongthao4.png",
+      "/tempimage/product_detail/huongthao5.png",
+      "/tempimage/product_detail/huongthao6.png"
+    ],
+    "stock": 116,
+    "botanical": {
+      "common_name": "Aloe Vera",
+      "scientific_name": "Aloe xdc8695",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "183 cm",
+      "care_tips": "Allow topsoil to dry between waterings. Water: Moderate (once a week). Keep away from drafts and extreme temperatures."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 13,
+    "title": "Bromeliad Mini",
+    "pricevnd": 750000.0,
+    "currency": "VND",
+    "sku": "PL-586932",
+    "category": "Cây lọc không khí",
+    "description": "Thêm sắc màu nhiệt đới vào không gian với Bromeliad Mini, dòng cây dứa cảnh có hoa văn và màu sắc độc đáo.",
+    "longdescription": "Bromeliad (Cây Dứa Cảnh Nến) nổi bật với những cụm hoa rực rỡ và lá có hoa văn lạ mắt. Phiên bản mini rất dễ chăm sóc, chỉ cần ít nước và có thể sống tốt trong nhà.",
+    "images": [
+      "/tempimage/product_detail/huongthao7.png",
+      "/tempimage/product_detail/huongthao8.png",
+      "/tempimage/product_detail/huongthao9.png",
+      "/tempimage/products/cay-hoa-tim-rim.png",
+      "/tempimage/products/cay-hong-mon-nhung.png"
+    ],
+    "stock": 2,
+    "botanical": {
+      "common_name": "Bromeliad",
+      "scientific_name": "Bromeliad x6c1ec4",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "98 cm",
+      "care_tips": "Water: Low (once every 2-4 weeks). Place Bromeliad in indirect bright light. Feed monthly during growing season."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 14,
+    "title": "Philodendron Baby",
+    "pricevnd": 157000.0,
+    "currency": "VND",
+    "sku": "PL-85A46B",
+    "category": "Bộ cây mini",
+    "description": "Bắt đầu tình yêu với cây lá xẻ cùng Philodendron Baby, phiên bản nhỏ xinh của dòng cây Trầu Bà Nam Mỹ.",
+    "longdescription": "Dòng cây Philodendron (Trầu Bà) nổi tiếng với những chiếc lá hình trái tim độc đáo. Phiên bản 'Baby' nhỏ gọn, phát triển nhanh và rất dễ chăm sóc, phù hợp cho người mới bắt đầu.",
+    "images": [
+      "/tempimage/products/cay-la-rong.png",
+      "/tempimage/products/caytre.png",
+      "/tempimage/products/caytrongnha.png",
+      "/tempimage/products/caytrongnha2.png",
+      "/tempimage/products/senda.png"
+    ],
+    "stock": 68,
+    "botanical": {
+      "common_name": "Philodendron",
+      "scientific_name": "Philodendron x3f9493",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "188 cm",
+      "care_tips": "Allow topsoil to dry between waterings. Feed monthly during growing season. Place Philodendron in full sun."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 15,
+    "title": "Spider Plant Baby",
+    "pricevnd": 897000.0,
+    "currency": "VND",
+    "sku": "PL-541EE2",
+    "category": "Cây ngoài trời",
+    "description": "Mang may mắn và tài lộc vào nhà với một chậu Spider Plant Baby nhỏ xinh, dễ trồng và nhanh ra cây con.",
+    "longdescription": "Spider Plant (Cây Mẫu Tử) là lựa chọn hoàn hảo cho người mới chơi cây vì sức sống mãnh liệt và khả năng tự nhân giống. Chậu cây nhỏ xinh này sẽ sớm cho ra những cây con đáng yêu treo lơ lửng.",
+    "images": [
+      "/tempimage/products/senda-2.png",
+      "/tempimage/products/trauba.png",
+      "/tempimage/products/trauba-1.png",
+      "/tempimage/products/unsplash_5lRxNLHfZOY.png",
+      "/tempimage/products/unsplash_a7rzcegedb4.png"
+    ],
+    "stock": 91,
+    "botanical": {
+      "common_name": "Spider Plant",
+      "scientific_name": "Spider x73eeae",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "191 cm",
+      "care_tips": "Keep away from drafts and extreme temperatures. Feed monthly during growing season. Place Spider Plant in partial sun."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 16,
+    "title": "Succulent Mix Deluxe",
+    "pricevnd": 151000.0,
+    "currency": "VND",
+    "sku": "PL-2A873C",
+    "category": "Cây trong nhà",
+    "description": "Một bộ sưu tập Sen Đá đa dạng trong cùng một chậu, mang lại vẻ đẹp sa mạc thu nhỏ cho không gian của bạn.",
+    "longdescription": "Phiên bản Deluxe của Succulent Mix (Bộ Sưu Tập Sen Đá) bao gồm nhiều loại sen đá và xương rồng mini có hình dáng và màu sắc khác nhau, được sắp xếp hài hòa trong một chậu. Cây rất dễ chăm, chỉ cần nhiều nắng và rất ít nước.",
+    "images": [
+      "/tempimage/products/unsplash_dM317CbttyY.png",
+      "/tempimage/products/unsplash_gSQbip5HHuc.png",
+      "/tempimage/products/unsplash_ruQHpukrN7c.png",
+      "/tempimage/products/unsplash_sUQ_LEqfzTY.png",
+      "/tempimage/products/unsplash_T0inbt7nRME.png"
+    ],
+    "stock": 75,
+    "botanical": {
+      "common_name": "Succulent Mix",
+      "scientific_name": "Succulent x73187f",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "21 cm",
+      "care_tips": "Water: Low (once every 2-4 weeks). Place Succulent Mix in low light / shade. Feed monthly during growing season."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 17,
+    "title": "Dracaena Mini",
+    "pricevnd": 655000.0,
+    "currency": "VND",
+    "sku": "PL-B7823C",
+    "category": "Cây mọng nước",
+    "description": "Mang vẻ đẹp kiến trúc và thanh lịch của dòng Dracaena (Phất Dụ) vào nhà với phiên bản mini tinh tế.",
+    "longdescription": "Dracaena, hay Phất Dụ, là một họ cây lớn nổi tiếng với những chiếc lá hình kiếm ấn tượng và khả năng thích nghi cao. Dòng mini có thể là một cây Phát Tài Búp Sen hoặc Phất Dụ Rồng, rất hợp để trang trí bàn làm việc.",
+    "images": [
+      "/tempimage/products/unsplash_ukh7l-aag8a.png",
+      "/tempimage/products/unsplash_sUQ_LEqfzTY.png",
+      "/tempimage/products/unsplash_ymjnpfg46fq.png",
+      "/tempimage/products/unsplash_yrxuxvy4sq4.png",
+      "/tempimage/products/unsplash_ywrybp-6p8c.png"
+    ],
+    "stock": 85,
+    "botanical": {
+      "common_name": "Dracaena",
+      "scientific_name": "Dracaena x8845e5",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "158 cm",
+      "care_tips": "Water: High (several times/week). Feed monthly during growing season. Keep away from drafts and extreme temperatures."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 18,
+    "title": "Rubber Plant Mini",
+    "pricevnd": 188000.0,
+    "currency": "VND",
+    "sku": "PL-49E091",
+    "category": "Cây lọc không khí",
+    "description": "Một phiên bản nhỏ xinh của Cây Đa Búp Đỏ, hoàn hảo để bắt đầu hành trình chăm sóc cây trong nhà của bạn.",
+    "longdescription": "Vẫn giữ được vẻ đẹp sang trọng của những chiếc lá sẫm màu, Rubber Plant Mini là lựa chọn lý tưởng cho không gian hạn chế. Cây dễ chăm sóc và sẽ phát triển thành một cây lớn ấn tượng theo thời gian.",
+    "images": [
+      "/tempimage/products/xuongrong.png",
+      "/tempimage/servicepage/frame 17.png",
+      "/tempimage/servicepage/frame 18.png",
+      "/tempimage/servicepage/frame 19.png",
+      "/tempimage/cattia.png"
+    ],
+    "stock": 45,
+    "botanical": {
+      "common_name": "Rubber Plant",
+      "scientific_name": "Rubber x0eb3ce",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "139 cm",
+      "care_tips": "Place Rubber Plant in low light / shade. Feed monthly during growing season. Allow topsoil to dry between waterings."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 19,
+    "title": "Dracaena Baby",
+    "pricevnd": 1045000.0,
+    "currency": "VND",
+    "sku": "PL-EEE874",
+    "category": "Cây ngoài trời",
+    "description": "Sự khởi đầu hoàn hảo cho một cây Phất Dụ tương lai, phiên bản 'Baby' nhỏ gọn nhưng đầy tiềm năng.",
+    "longdescription": "Dracaena Baby là những cây Phất Dụ non, được chăm sóc kỹ lưỡng để có bộ rễ khỏe mạnh. Hãy nuôi dưỡng chúng và chứng kiến sự phát triển ngoạn mục thành một cây cảnh cao lớn, ấn tượng cho sân vườn của bạn.",
+    "images": [
+      "/tempimage/chatha.png",
+      "/tempimage/cutplant.png",
+      "/tempimage/dichvutrongco.png",
+      "/tempimage/introduction_item1.png",
+      "/tempimage/introduction_item2.png"
+    ],
+    "stock": 24,
+    "botanical": {
+      "common_name": "Dracaena",
+      "scientific_name": "Dracaena x8845e5",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "55 cm",
+      "care_tips": "Allow topsoil to dry between waterings. Feed monthly during growing season. Place Dracaena in full sun."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 20,
+    "title": "Snake Plant Compact",
+    "pricevnd": 985000.0,
+    "currency": "VND",
+    "sku": "PL-3800FF",
+    "category": "Bộ cây mini",
+    "description": "Phiên bản Lưỡi Hổ nhỏ gọn với các lá ngắn và mập mạp, tạo nên một hình dáng độc đáo cho bàn làm việc.",
+    "longdescription": "Snake Plant Compact (Lưỡi Hổ lùn) là một giống cây đặc biệt, phát triển theo dạng cụm tròn thay vì mọc thẳng đứng. Cây vẫn giữ nguyên khả năng lọc không khí tuyệt vời trong một hình dáng nhỏ gọn, đáng yêu.",
+    "images": [
+      "/tempimage/introduction_item3.png",
+      "/tempimage/introduction_landingpage.png",
+      "/tempimage/news_1.png",
+      "/tempimage/news_2.png",
+      "/tempimage/news_3.png"
+    ],
+    "stock": 70,
+    "botanical": {
+      "common_name": "Snake Plant",
+      "scientific_name": "Snake x612f60",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "186 cm",
+      "care_tips": "Water: Low (once every 2-4 weeks). Keep away from drafts and extreme temperatures. Feed monthly during growing season."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 21,
+    "title": "Philodendron Compact",
+    "pricevnd": 319000.0,
+    "currency": "VND",
+    "sku": "PL-2C9BDA",
+    "category": "Cây lọc không khí",
+    "description": "Một phiên bản Trầu Bà Nam Mỹ nhỏ gọn, không leo dài, phù hợp để tạo một bụi cây xanh um trên bàn.",
+    "longdescription": "Khác với các dòng Trầu Bà dây leo, Philodendron Compact có thân cứng cáp hơn và phát triển thành dạng bụi. Những chiếc lá hình tim xanh mướt sẽ mang lại một mảng xanh tươi mát mà không chiếm nhiều diện tích.",
+    "images": [
+      "/tempimage/policy_landingpage.png",
+      "/tempimage/temp_carousel.png",
+      "/tempimage/temp_dich_vu.png",
+      "/tempimage/temp-sanpham-purple-flower.png",
+      "/tempimage/thicongcanhquan.png"
+    ],
+    "stock": 115,
+    "botanical": {
+      "common_name": "Philodendron",
+      "scientific_name": "Philodendron x3f9493",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "117 cm",
+      "care_tips": "Allow topsoil to dry between waterings. Feed monthly during growing season. Water: High (several times/week)."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 22,
+    "title": "Hoya Premium",
+    "pricevnd": 1152000.0,
+    "currency": "VND",
+    "sku": "PL-80B835",
+    "category": "Bộ cây mini",
+    "description": "Tuyển tập những giống Cẩm Cù độc đáo và quý hiếm nhất, dành cho những người sưu tầm sành điệu.",
+    "longdescription": "Bộ Hoya Premium bao gồm những giống Cẩm Cù lá tim, lá xoắn hoặc có màu sắc đặc biệt. Đây không chỉ là cây cảnh mà còn là một tác phẩm nghệ thuật của thiên nhiên, món quà ý nghĩa cho những người yêu cây.",
+    "images": [
+      "/tempimage/trongcaygiadinh.png",
+      "/tempimage/product_detail/huongthao.png",
+      "/tempimage/product_detail/huongthao10.png",
+      "/tempimage/product_detail/huongthao2.png",
+      "/tempimage/product_detail/huongthao3.png"
+    ],
+    "stock": 71,
+    "botanical": {
+      "common_name": "Hoya",
+      "scientific_name": "Hoya xfbcbb0",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "68 cm",
+      "care_tips": "Place Hoya in partial sun. Keep away from drafts and extreme temperatures. Allow topsoil to dry between waterings."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 23,
+    "title": "Dracaena Mini",
+    "pricevnd": 135000.0,
+    "currency": "VND",
+    "sku": "PL-15717E",
+    "category": "Cây lọc không khí",
+    "description": "Một chậu Phất Dụ Rồng mini, mang ý nghĩa may mắn và tài lộc đến cho bàn làm việc của bạn.",
+    "longdescription": "Dracaena (Phất Dụ Rồng) là một loại cây cảnh mini rất được ưa chuộng trong văn hóa Á Đông. Cây nhỏ gọn, dễ chăm sóc và được tin là sẽ mang lại may mắn, vượng khí cho chủ nhân.",
+    "images": [
+      "/tempimage/product_detail/huongthao4.png",
+      "/tempimage/product_detail/huongthao5.png",
+      "/tempimage/product_detail/huongthao6.png",
+      "/tempimage/product_detail/huongthao7.png",
+      "/tempimage/product_detail/huongthao8.png"
+    ],
+    "stock": 64,
+    "botanical": {
+      "common_name": "Dracaena",
+      "scientific_name": "Dracaena x8845e5",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "150 cm",
+      "care_tips": "Place Dracaena in low light / shade. Keep away from drafts and extreme temperatures. Allow topsoil to dry between waterings."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 24,
+    "title": "Succulent Mix Compact",
+    "pricevnd": 213000.0,
+    "currency": "VND",
+    "sku": "PL-D797CE",
+    "category": "Cây hoa",
+    "description": "Vẻ đẹp của sa mạc gói gọn trong một chậu cây nhỏ, lý tưởng cho những người yêu thích sự tối giản và mạnh mẽ.",
+    "longdescription": "Bộ sưu tập Sen Đá nhỏ gọn này mang đến sự đa dạng về hình dáng và màu sắc mà không chiếm nhiều diện tích. Đây là món quà tuyệt vời hoặc một sự khởi đầu dễ dàng cho bất kỳ ai muốn thử sức với cây mọng nước.",
+    "images": [
+      "/tempimage/product_detail/huongthao9.png",
+      "/tempimage/products/cay-hoa-tim-rim.png",
+      "/tempimage/products/cay-hong-mon-nhung.png",
+      "/tempimage/products/cay-la-rong.png",
+      "/tempimage/products/caytre.png"
+    ],
+    "stock": 31,
+    "botanical": {
+      "common_name": "Succulent Mix",
+      "scientific_name": "Succulent x73187f",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "127 cm",
+      "care_tips": "Water: Regular (2–3 times/week). Allow topsoil to dry between waterings. Place Succulent Mix in partial sun."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 25,
+    "title": "Aloe Vera Compact",
+    "pricevnd": 226000.0,
+    "currency": "VND",
+    "sku": "PL-4FC75A",
+    "category": "Cây nhiệt đới",
+    "description": "Giống Nha Đam lùn với các bẹ lá ngắn và mập mạp hơn, rất lý tưởng để đặt trên bệ cửa sổ.",
+    "longdescription": "Phiên bản Nha Đam nhỏ gọn này vẫn giữ đầy đủ các công dụng quý giá trong một hình dáng xinh xắn hơn. Cây ưa sáng, cần ít nước, là một 'nhà máy' sản xuất oxy và làm đẹp tự nhiên ngay trong nhà bạn.",
+    "images": [
+      "/tempimage/products/caytrongnha.png",
+      "/tempimage/products/caytrongnha2.png",
+      "/tempimage/products/senda.png",
+      "/tempimage/products/senda-2.png",
+      "/tempimage/products/trauba.png"
+    ],
+    "stock": 38,
+    "botanical": {
+      "common_name": "Aloe Vera",
+      "scientific_name": "Aloe xdc8695",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "38 cm",
+      "care_tips": "Keep away from drafts and extreme temperatures. Place Aloe Vera in low light / shade. Feed monthly during growing season."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 26,
+    "title": "Spider Plant Deluxe",
+    "pricevnd": 646000.0,
+    "currency": "VND",
+    "sku": "PL-9B21BB",
+    "category": "Cây ngoài trời",
+    "description": "Một chậu Cây Mẫu Tử xum xuê, sẵn sàng tỏa ra những 'nhện con' xinh xắn để bạn nhân giống.",
+    "longdescription": "Phiên bản Deluxe đảm bảo bạn nhận được một cây mẹ trưởng thành, khỏe mạnh với nhiều thân và lá. Cây rất lý tưởng để treo ở ban công hoặc hiên nhà, tạo thành một thác lá xanh mát mắt.",
+    "images": [
+      "/tempimage/products/trauba-1.png",
+      "/tempimage/products/unsplash_5lRxNLHfZOY.png",
+      "/tempimage/products/unsplash_a7rzcegedb4.png",
+      "/tempimage/products/unsplash_dM317CbttyY.png",
+      "/tempimage/products/unsplash_gSQbip5HHuc.png"
+    ],
+    "stock": 119,
+    "botanical": {
+      "common_name": "Spider Plant",
+      "scientific_name": "Spider x73eeae",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "82 cm",
+      "care_tips": "Water: Regular (2–3 times/week). Feed monthly during growing season. Allow topsoil to dry between waterings."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 27,
+    "title": "Jade Plant Classic",
+    "pricevnd": 1182000.0,
+    "currency": "VND",
+    "sku": "PL-7D5F4F",
+    "category": "Bộ cây mini",
+    "description": "Mang tài lộc và may mắn đến nhà với Jade Plant, cây ngọc bích phong thủy với những chiếc lá tròn đầy đặn.",
+    "longdescription": "Jade Plant (Cây Ngọc Bích) là một biểu tượng của sự may mắn và thịnh vượng. Phiên bản Classic có dáng cây đã được tạo hình cơ bản, vững chãi, rất dễ chăm sóc và sẽ sống cùng bạn trong nhiều năm.",
+    "images": [
+      "/tempimage/products/unsplash_ruQHpukrN7c.png",
+      "/tempimage/products/unsplash_sUQ_LEqfzTY.png",
+      "/tempimage/products/unsplash_T0inbt7nRME.png",
+      "/tempimage/products/unsplash_ukh7l-aag8a.png",
+      "/tempimage/products/unsplash_sUQ_LEqfzTY.png"
+    ],
+    "stock": 83,
+    "botanical": {
+      "common_name": "Jade Plant",
+      "scientific_name": "Jade x90c7ee",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "189 cm",
+      "care_tips": "Allow topsoil to dry between waterings. Place Jade Plant in low light / shade. Feed monthly during growing season."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 28,
+    "title": "Spider Plant Deluxe",
+    "pricevnd": 384000.0,
+    "currency": "VND",
+    "sku": "PL-F64394",
+    "category": "Cây hoa",
+    "description": "Làm sinh động không gian treo của bạn với Spider Plant, loài cây lọc không khí hàng đầu và cực dễ nhân giống.",
+    "longdescription": "Cây Mẫu Tử (Spider Plant) nổi bật với những tán lá dài, mảnh mai có sọc trắng. Cây không chỉ đẹp khi treo mà còn có tác dụng loại bỏ các độc tố phổ biến trong không khí, mang lại không gian trong lành.",
+    "images": [
+      "/tempimage/products/unsplash_ymjnpfg46fq.png",
+      "/tempimage/products/unsplash_yrxuxvy4sq4.png",
+      "/tempimage/products/unsplash_ywrybp-6p8c.png",
+      "/tempimage/products/xuongrong.png",
+      "/tempimage/servicepage/frame 17.png"
+    ],
+    "stock": 26,
+    "botanical": {
+      "common_name": "Spider Plant",
+      "scientific_name": "Spider x73eeae",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "195 cm",
+      "care_tips": "Allow topsoil to dry between waterings. Place Spider Plant in partial sun. Feed monthly during growing season."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 29,
+    "title": "Hoya Baby",
+    "pricevnd": 389000.0,
+    "currency": "VND",
+    "sku": "PL-452B14",
+    "category": "Cây trong nhà",
+    "description": "Bắt đầu bộ sưu tập Cẩm Cù của bạn với một cây Hoya con khỏe mạnh, sẵn sàng để bạn chăm sóc và chờ ngày ra hoa.",
+    "longdescription": "Hoya (Cẩm Cù) là loài cây leo nhiệt đới nổi tiếng với những chùm hoa sáp thơm ngát. Phiên bản 'Baby' là những cây non đã có rễ khỏe, là cơ hội để bạn tự tay nuôi dưỡng và chứng kiến sự trưởng thành của cây.",
+    "images": [
+      "/tempimage/servicepage/frame 18.png",
+      "/tempimage/servicepage/frame 19.png",
+      "/tempimage/cattia.png",
+      "/tempimage/chatha.png",
+      "/tempimage/cutplant.png"
+    ],
+    "stock": 42,
+    "botanical": {
+      "common_name": "Hoya",
+      "scientific_name": "Hoya xfbcbb0",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "61 cm",
+      "care_tips": "Keep away from drafts and extreme temperatures. Place Hoya in full sun. Feed monthly during growing season."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 30,
+    "title": "Snake Plant Premium",
+    "pricevnd": 1092000.0,
+    "currency": "VND",
+    "sku": "PL-E603C3",
+    "category": "Cây hoa",
+    "description": "Một chậu Lưỡi Hổ cỡ lớn, phiên bản cao cấp với tán lá xum xuê, tạo điểm nhấn kiến trúc mạnh mẽ cho không gian.",
+    "longdescription": "Phiên bản Snake Plant Premium được tuyển chọn kỹ lưỡng, đảm bảo cây có chiều cao ấn tượng và nhiều lá khỏe mạnh. Đây là một 'tác phẩm điêu khắc' tự nhiên, có khả năng thanh lọc không khí và mang lại vẻ đẹp sang trọng.",
+    "images": [
+      "/tempimage/dichvutrongco.png",
+      "/tempimage/introduction_item1.png",
+      "/tempimage/introduction_item2.png",
+      "/tempimage/introduction_item3.png",
+      "/tempimage/introduction_landingpage.png"
+    ],
+    "stock": 4,
+    "botanical": {
+      "common_name": "Snake Plant",
+      "scientific_name": "Snake x612f60",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "130 cm",
+      "care_tips": "Allow topsoil to dry between waterings. Keep away from drafts and extreme temperatures. Place Snake Plant in indirect bright light."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 31,
+    "title": "Bird's Nest Fern Deluxe",
+    "pricevnd": 844000.0,
+    "currency": "VND",
+    "sku": "PL-D39481",
+    "category": "Cây nhiệt đới",
+    "description": "Tận hưởng vẻ đẹp xanh mướt của rừng rậm nhiệt đới với một chậu Dương Xỉ Tổ Chim cỡ lớn, xum xuê.",
+    "longdescription": "Bird's Nest Fern Deluxe mang đến một mảng xanh ấn tượng với những tán lá dài, lượn sóng. Cây ưa ẩm và bóng râm, là giải pháp tuyệt vời để mang thiên nhiên vào những góc ít sáng trong nhà.",
+    "images": [
+      "/tempimage/news_1.png",
+      "/tempimage/news_2.png",
+      "/tempimage/news_3.png",
+      "/tempimage/policy_landingpage.png",
+      "/tempimage/temp_carousel.png"
+    ],
+    "stock": 13,
+    "botanical": {
+      "common_name": "Bird's Nest Fern",
+      "scientific_name": "Bird's x4586de",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "178 cm",
+      "care_tips": "Water: Moderate (once a week). Keep away from drafts and extreme temperatures. Feed monthly during growing season."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 32,
+    "title": "Ficus Deluxe",
+    "pricevnd": 905000.0,
+    "currency": "VND",
+    "sku": "PL-520CB6",
+    "category": "Cây mọng nước",
+    "description": "Một cây Ficus (họ Đa, Sung, Si) phiên bản Deluxe, mang vẻ đẹp cổ điển và ý nghĩa phong thủy tốt lành.",
+    "longdescription": "Dòng Ficus rất đa dạng, có thể là một cây Ficus Lyrata (Bàng Singapore) hoặc Ficus Elastica (Đa Búp Đỏ). Phiên bản Deluxe đảm bảo cây đã trưởng thành, có dáng đẹp, là điểm nhấn ấn tượng cho mọi không gian nội thất.",
+    "images": [
+      "/tempimage/temp_dich_vu.png",
+      "/tempimage/temp-sanpham-purple-flower.png",
+      "/tempimage/thicongcanhquan.png",
+      "/tempimage/trongcaygiadinh.png",
+      "/tempimage/product_detail/huongthao.png"
+    ],
+    "stock": 100,
+    "botanical": {
+      "common_name": "Ficus",
+      "scientific_name": "Ficus xfdf7b8",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "88 cm",
+      "care_tips": "Feed monthly during growing season. Place Ficus in indirect bright light. Water: Low (once every 2-4 weeks)."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 33,
+    "title": "Succulent Mix Deluxe",
+    "pricevnd": 994000.0,
+    "currency": "VND",
+    "sku": "PL-F1F325",
+    "category": "Cây lọc không khí",
+    "description": "Một tiểu cảnh sa mạc ấn tượng, kết hợp nhiều loại Sen Đá và Xương Rồng trong một chậu lớn.",
+    "longdescription": "Bộ sưu tập Succulent Mix Deluxe được các nghệ nhân của chúng tôi sắp xếp thủ công, tạo nên một bố cục hài hòa và đẹp mắt. Đây là một tác phẩm nghệ thuật sống, không cần chăm sóc nhiều nhưng luôn thu hút mọi ánh nhìn.",
+    "images": [
+      "/tempimage/product_detail/huongthao10.png",
+      "/tempimage/product_detail/huongthao2.png",
+      "/tempimage/product_detail/huongthao3.png",
+      "/tempimage/product_detail/huongthao4.png",
+      "/tempimage/product_detail/huongthao5.png"
+    ],
+    "stock": 44,
+    "botanical": {
+      "common_name": "Succulent Mix",
+      "scientific_name": "Succulent x73187f",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "77 cm",
+      "care_tips": "Feed monthly during growing season. Allow topsoil to dry between waterings. Water: Moderate (once a week)."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 34,
+    "title": "Snake Plant Baby",
+    "pricevnd": 392000.0,
+    "currency": "VND",
+    "sku": "PL-99B0BC",
+    "category": "Cây nhiệt đới",
+    "description": "Sự lựa chọn hoàn hảo cho người mới bắt đầu, Snake Plant Baby là giống Lưỡi Hổ nhỏ gọn và cực kỳ dễ sống.",
+    "longdescription": "Đừng lo lắng nếu bạn chưa có kinh nghiệm, Snake Plant Baby gần như 'bất tử'. Cây cần rất ít nước và có thể sống trong nhiều điều kiện ánh sáng khác nhau, đồng thời liên tục thanh lọc không khí cho bạn.",
+    "images": [
+      "/tempimage/product_detail/huongthao6.png",
+      "/tempimage/product_detail/huongthao7.png",
+      "/tempimage/product_detail/huongthao8.png",
+      "/tempimage/product_detail/huongthao9.png",
+      "/tempimage/products/cay-hoa-tim-rim.png"
+    ],
+    "stock": 65,
+    "botanical": {
+      "common_name": "Snake Plant",
+      "scientific_name": "Snake x612f60",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "27 cm",
+      "care_tips": "Water: Regular (2–3 times/week). Allow topsoil to dry between waterings. Place Snake Plant in low light / shade."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 35,
+    "title": "ZZ Plant Classic",
+    "pricevnd": 566000.0,
+    "currency": "VND",
+    "sku": "PL-CC42A1",
+    "category": "Cây nhiệt đới",
+    "description": "Phiên bản Kim Tiền cổ điển, kích thước vừa phải, mang ý nghĩa phong thủy tốt lành cho gia chủ.",
+    "longdescription": "ZZ Plant Classic là một lựa chọn không bao giờ lỗi thời. Với những tán lá xanh bóng mọc đối xứng, cây không chỉ đẹp mà còn được tin là sẽ thu hút tài lộc và may mắn. Cây rất dễ chăm, không cần tưới nhiều.",
+    "images": [
+      "/tempimage/products/cay-hong-mon-nhung.png",
+      "/tempimage/products/cay-la-rong.png",
+      "/tempimage/products/caytre.png",
+      "/tempimage/products/caytrongnha.png",
+      "/tempimage/products/caytrongnha2.png"
+    ],
+    "stock": 100,
+    "botanical": {
+      "common_name": "ZZ Plant",
+      "scientific_name": "Zz xa34ef9",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "175 cm",
+      "care_tips": "Keep away from drafts and extreme temperatures. Water: High (several times/week). Feed monthly during growing season."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 36,
+    "title": "Monstera Premium",
+    "pricevnd": 568000.0,
+    "currency": "VND",
+    "sku": "PL-E84C6A",
+    "category": "Cây hoa",
+    "description": "Tạo một điểm nhấn nhiệt đới ấn tượng với Monstera Premium, có những chiếc lá xẻ sâu đặc trưng.",
+    "longdescription": "Monstera Deliciosa (Trầu Bà Lá Xẻ) là một biểu tượng của các khu rừng nhiệt đới. Phiên bản Premium của chúng tôi đảm bảo cây đã có những lá xẻ đẹp mắt, sẵn sàng để trở thành trung tâm của mọi căn phòng.",
+    "images": [
+      "/tempimage/products/senda.png",
+      "/tempimage/products/senda-2.png",
+      "/tempimage/products/trauba.png",
+      "/tempimage/products/trauba-1.png",
+      "/tempimage/products/unsplash_5lRxNLHfZOY.png"
+    ],
+    "stock": 118,
+    "botanical": {
+      "common_name": "Monstera",
+      "scientific_name": "Monstera x6e8736",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "130 cm",
+      "care_tips": "Keep away from drafts and extreme temperatures. Allow topsoil to dry between waterings. Feed monthly during growing season."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 37,
+    "title": "ZZ Plant Premium",
+    "pricevnd": 1088000.0,
+    "currency": "VND",
+    "sku": "PL-DFC222",
+    "category": "Cây hoa",
+    "description": "Một cây Kim Tiền cỡ đại, mang lại vẻ đẹp sang trọng và ý nghĩa thịnh vượng cho không gian của bạn.",
+    "longdescription": "Nếu bạn đang tìm kiếm một điểm nhấn ấn tượng cho sảnh lớn hoặc phòng khách, ZZ Plant Premium chính là câu trả lời. Cây có dáng vẻ bề thế, tán lá sum suê và vẫn giữ được ưu điểm cực kỳ dễ chăm sóc.",
+    "images": [
+      "/tempimage/products/unsplash_a7rzcegedb4.png",
+      "/tempimage/products/unsplash_dM317CbttyY.png",
+      "/tempimage/products/unsplash_gSQbip5HHuc.png",
+      "/tempimage/products/unsplash_ruQHpukrN7c.png",
+      "/tempimage/products/unsplash_sUQ_LEqfzTY.png"
+    ],
+    "stock": 39,
+    "botanical": {
+      "common_name": "ZZ Plant",
+      "scientific_name": "Zz xa34ef9",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "123 cm",
+      "care_tips": "Water: Moderate (once a week). Feed monthly during growing season. Allow topsoil to dry between waterings."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 38,
+    "title": "Calathea Premium",
+    "pricevnd": 918000.0,
+    "currency": "VND",
+    "sku": "PL-2CBAA5",
+    "category": "Cây ngoài trời",
+    "description": "Sở hữu một tác phẩm nghệ thuật sống với Calathea, dòng cây nổi tiếng với những hoa văn lá độc đáo.",
+    "longdescription": "Calathea, hay còn gọi là Cây Đuôi Công, là một tuyệt tác của thiên nhiên với vô số loại hoa văn lá khác nhau. Cây ưa bóng râm và độ ẩm cao, là một thử thách thú vị cho những người yêu cây sành điệu.",
+    "images": [
+      "/tempimage/products/unsplash_T0inbt7nRME.png",
+      "/tempimage/products/unsplash_ukh7l-aag8a.png",
+      "/tempimage/products/unsplash_sUQ_LEqfzTY.png",
+      "/tempimage/products/unsplash_ymjnpfg46fq.png",
+      "/tempimage/products/unsplash_yrxuxvy4sq4.png"
+    ],
+    "stock": 78,
+    "botanical": {
+      "common_name": "Calathea",
+      "scientific_name": "Calathea x8d34cb",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "160 cm",
+      "care_tips": "Allow topsoil to dry between waterings. Water: Regular (2–3 times/week). Feed monthly during growing season."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 39,
+    "title": "Begonia Classic",
+    "pricevnd": 813000.0,
+    "currency": "VND",
+    "sku": "PL-82EC6F",
+    "category": "Cây lọc không khí",
+    "description": "Thêm một chút màu sắc rực rỡ với chậu Thu Hải Đường cỡ vừa, dễ dàng chăm sóc và cho hoa quanh năm.",
+    "longdescription": "Phiên bản Classic của Begonia (Thu Hải Đường) là lựa chọn hoàn hảo để mang lại màu sắc cho bệ cửa sổ hoặc ban công. Cây phát triển tốt trong điều kiện ánh sáng gián tiếp và sẽ làm bừng sáng không gian của bạn.",
+    "images": [
+      "/tempimage/products/unsplash_ywrybp-6p8c.png",
+      "/tempimage/products/xuongrong.png",
+      "/tempimage/servicepage/frame 17.png",
+      "/tempimage/servicepage/frame 18.png",
+      "/tempimage/servicepage/frame 19.png"
+    ],
+    "stock": 56,
+    "botanical": {
+      "common_name": "Begonia",
+      "scientific_name": "Begonia x432699",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "150 cm",
+      "care_tips": "Place Begonia in full sun. Allow topsoil to dry between waterings. Feed monthly during growing season."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 40,
+    "title": "String of Pearls Variegated",
+    "pricevnd": 184000.0,
+    "currency": "VND",
+    "sku": "PL-B78E39",
+    "category": "Bộ cây mini",
+    "description": "Một chuỗi ngọc trai độc đáo với các đốm trắng, tạo nên vẻ đẹp lạ mắt cho bộ sưu tập cây treo của bạn.",
+    "longdescription": "String of Pearls Variegated (Chuỗi Ngọc Bi Đốm) là một giống cây mọng nước dạng treo với những 'hạt' tròn có vân trắng hoặc hồng. Cây cần nhiều nắng và rất ít nước, là một điểm nhấn tinh tế và độc đáo.",
+    "images": [
+      "/tempimage/cattia.png",
+      "/tempimage/chatha.png",
+      "/tempimage/cutplant.png",
+      "/tempimage/dichvutrongco.png",
+      "/tempimage/introduction_item1.png"
+    ],
+    "stock": 30,
+    "botanical": {
+      "common_name": "String of Pearls",
+      "scientific_name": "String x5134ce",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "70 cm",
+      "care_tips": "Place String of Pearls in indirect bright light. Water: Low (once every 2-4 weeks). Feed monthly during growing season."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 41,
+    "title": "String of Pearls Baby",
+    "pricevnd": 940000.0,
+    "currency": "VND",
+    "sku": "PL-477754",
+    "category": "Cây lọc không khí",
+    "description": "Sở hữu một 'chuỗi ngọc trai' nhỏ xinh, một trong những loại cây treo độc đáo và được yêu thích nhất.",
+    "longdescription": "String of Pearls (Chuỗi Ngọc Bi) là một loại cây mọng nước ấn tượng với các nhánh dài mang những chiếc lá hình cầu như hạt ngọc trai. Cây non rất dễ chăm sóc và sẽ nhanh chóng mọc thành những chuỗi dài đẹp mắt.",
+    "images": [
+      "/tempimage/introduction_item2.png",
+      "/tempimage/introduction_item3.png",
+      "/tempimage/introduction_landingpage.png",
+      "/tempimage/news_1.png",
+      "/tempimage/news_2.png"
+    ],
+    "stock": 53,
+    "botanical": {
+      "common_name": "String of Pearls",
+      "scientific_name": "String x5134ce",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "146 cm",
+      "care_tips": "Water: Moderate (once a week). Place String of Pearls in full sun. Feed monthly during growing season."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 42,
+    "title": "Hoya Deluxe",
+    "pricevnd": 276000.0,
+    "currency": "VND",
+    "sku": "PL-37FBB0",
+    "category": "Cây nhiệt đới",
+    "description": "Một chậu Cẩm Cù trưởng thành, xum xuê, hứa hẹn sẽ sớm cho ra những chùm hoa sáp thơm ngát.",
+    "longdescription": "Phiên bản Hoya Deluxe được tuyển chọn từ những cây Cẩm Cù đã đủ tuổi ra hoa. Hãy treo chúng ở nơi có ánh sáng gián tiếp và chờ đợi để được thưởng thức vẻ đẹp và hương thơm quyến rũ của những chùm hoa hình ngôi sao.",
+    "images": [
+      "/tempimage/news_3.png",
+      "/tempimage/policy_landingpage.png",
+      "/tempimage/temp_carousel.png",
+      "/tempimage/temp_dich_vu.png",
+      "/tempimage/temp-sanpham-purple-flower.png"
+    ],
+    "stock": 66,
+    "botanical": {
+      "common_name": "Hoya",
+      "scientific_name": "Hoya xfbcbb0",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "162 cm",
+      "care_tips": "Feed monthly during growing season. Water: Low (once every 2-4 weeks). Keep away from drafts and extreme temperatures."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 43,
+    "title": "Bromeliad Classic",
+    "pricevnd": 747000.0,
+    "currency": "VND",
+    "sku": "PL-7ED4D1",
+    "category": "Bộ cây mini",
+    "description": "Mang không khí lễ hội vào nhà với một chậu Dứa Cảnh Nến cổ điển, rực rỡ và không cần chăm sóc nhiều.",
+    "longdescription": "Bromeliad Classic là lựa chọn hoàn hảo để trang trí trong các dịp đặc biệt hoặc mang lại màu sắc tươi vui cho ngôi nhà. Cụm hoa màu đỏ hoặc cam ở trung tâm có thể giữ được vẻ đẹp trong nhiều tháng.",
+    "images": [
+      "/tempimage/thicongcanhquan.png",
+      "/tempimage/trongcaygiadinh.png",
+      "/tempimage/product_detail/huongthao.png",
+      "/tempimage/product_detail/huongthao10.png",
+      "/tempimage/product_detail/huongthao2.png"
+    ],
+    "stock": 114,
+    "botanical": {
+      "common_name": "Bromeliad",
+      "scientific_name": "Bromeliad x6c1ec4",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "160 cm",
+      "care_tips": "Feed monthly during growing season. Keep away from drafts and extreme temperatures. Water: Moderate (once a week)."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 44,
+    "title": "Succulent Mix Baby",
+    "pricevnd": 794000.0,
+    "currency": "VND",
+    "sku": "PL-EE6233",
+    "category": "Bộ cây mini",
+    "description": "Một món quà nhỏ xinh và ý nghĩa, bộ sưu tập Sen Đá 'Baby' là khởi đầu hoàn hảo cho một người yêu cây.",
+    "longdescription": "Bộ Succulent Mix Baby bao gồm nhiều loại sen đá con, được trồng trong một chậu nhỏ xinh xắn. Đây là lựa chọn tuyệt vời để trang trí bàn học, bàn làm việc hoặc làm quà tặng cho bạn bè, đồng nghiệp.",
+    "images": [
+      "/tempimage/product_detail/huongthao3.png",
+      "/tempimage/product_detail/huongthao4.png",
+      "/tempimage/product_detail/huongthao5.png",
+      "/tempimage/product_detail/huongthao6.png",
+      "/tempimage/product_detail/huongthao7.png"
+    ],
+    "stock": 99,
+    "botanical": {
+      "common_name": "Succulent Mix",
+      "scientific_name": "Succulent x73187f",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "90 cm",
+      "care_tips": "Allow topsoil to dry between waterings. Water: Low (once every 2-4 weeks). Feed monthly during growing season."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 45,
+    "title": "Dracaena Variegated",
+    "pricevnd": 1080000.0,
+    "currency": "VND",
+    "sku": "PL-F3F3AE",
+    "category": "Cây trong nhà",
+    "description": "Một điểm nhấn đầy màu sắc với Dracaena Variegated, dòng Phất Dụ có lá sọc trắng hoặc vàng ấn tượng.",
+    "longdescription": "Phiên bản Dracaena Variegated (Phất Dụ Sọc) mang lại vẻ đẹp tươi sáng và hiện đại hơn so với các dòng lá xanh thông thường. Cây vẫn giữ được đặc tính dễ chăm sóc và khả năng lọc không khí tốt.",
+    "images": [
+      "/tempimage/product_detail/huongthao8.png",
+      "/tempimage/product_detail/huongthao9.png",
+      "/tempimage/products/cay-hoa-tim-rim.png",
+      "/tempimage/products/cay-hong-mon-nhung.png",
+      "/tempimage/products/cay-la-rong.png"
+    ],
+    "stock": 17,
+    "botanical": {
+      "common_name": "Dracaena",
+      "scientific_name": "Dracaena x8845e5",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "118 cm",
+      "care_tips": "Place Dracaena in indirect bright light. Feed monthly during growing season. Water: Moderate (once a week)."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 46,
+    "title": "Dracaena Classic",
+    "pricevnd": 601000.0,
+    "currency": "VND",
+    "sku": "PL-4808C8",
+    "category": "Cây trong nhà",
+    "description": "Mang vẻ đẹp mạnh mẽ, kiến trúc của họ Phất Dụ vào không gian nội thất của bạn với một cây Dracaena Classic.",
+    "longdescription": "Dòng Dracaena Classic là một lựa chọn phổ biến cho các văn phòng và phòng khách nhờ dáng vẻ thanh lịch và không đòi hỏi nhiều ánh sáng. Cây có khả năng chịu hạn tốt và giúp cải thiện chất lượng không khí.",
+    "images": [
+      "/tempimage/products/caytre.png",
+      "/tempimage/products/caytrongnha.png",
+      "/tempimage/products/caytrongnha2.png",
+      "/tempimage/products/senda.png",
+      "/tempimage/products/senda-2.png"
+    ],
+    "stock": 26,
+    "botanical": {
+      "common_name": "Dracaena",
+      "scientific_name": "Dracaena x8845e5",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "169 cm",
+      "care_tips": "Feed monthly during growing season. Place Dracaena in low light / shade. Water: High (several times/week)."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 47,
+    "title": "Jade Plant Baby",
+    "pricevnd": 516000.0,
+    "currency": "VND",
+    "sku": "PL-83F0B7",
+    "category": "Bộ cây mini",
+    "description": "Một cây Ngọc Bích nhỏ, biểu tượng của may mắn và tài lộc, món quà ý nghĩa cho bạn bè và đồng nghiệp.",
+    "longdescription": "Jade Plant (Cây Ngọc Bích) là một loại cây mọng nước rất dễ chăm sóc. Phiên bản 'Baby' là lựa chọn hoàn hảo để bắt đầu, cây sẽ lớn dần lên cùng với sự thịnh vượng của bạn.",
+    "images": [
+      "/tempimage/products/trauba.png",
+      "/tempimage/products/trauba-1.png",
+      "/tempimage/products/unsplash_5lRxNLHfZOY.png",
+      "/tempimage/products/unsplash_a7rzcegedb4.png",
+      "/tempimage/products/unsplash_dM317CbttyY.png"
+    ],
+    "stock": 53,
+    "botanical": {
+      "common_name": "Jade Plant",
+      "scientific_name": "Jade x90c7ee",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "76 cm",
+      "care_tips": "Feed monthly during growing season. Place Jade Plant in partial sun. Water: High (several times/week)."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 48,
+    "title": "Dracaena Premium",
+    "pricevnd": 840000.0,
+    "currency": "VND",
+    "sku": "PL-12788F",
+    "category": "Cây lọc không khí",
+    "description": "Cây trang trí phù hợp gia đình và văn phòng, dễ chăm sóc.",
+    "longdescription": "Cây xanh mang lại không gian tươi mát, phù hợp trang trí và làm quà tặng.",
+    "images": [
+      "/tempimage/products/unsplash_gSQbip5HHuc.png",
+      "/tempimage/products/unsplash_ruQHpukrN7c.png",
+      "/tempimage/products/unsplash_sUQ_LEqfzTY.png",
+      "/tempimage/products/unsplash_T0inbt7nRME.png",
+      "/tempimage/products/unsplash_ukh7l-aag8a.png"
+    ],
+    "stock": 92,
+    "botanical": {
+      "common_name": "Dracaena",
+      "scientific_name": "Dracaena x8845e5",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "52 cm",
+      "care_tips": "Keep away from drafts and extreme temperatures. Place Dracaena in low light / shade. Feed monthly during growing season."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 49,
+    "title": "Hoya Deluxe",
+    "pricevnd": 1051000.0,
+    "currency": "VND",
+    "sku": "PL-EDAEE9",
+    "category": "Cây ngoài trời",
+    "description": "Cây trang trí phù hợp gia đình và văn phòng, dễ chăm sóc.",
+    "longdescription": "Cây xanh mang lại không gian tươi mát, phù hợp trang trí và làm quà tặng.",
+    "images": [
+      "/tempimage/products/unsplash_sUQ_LEqfzTY.png",
+      "/tempimage/products/unsplash_ymjnpfg46fq.png",
+      "/tempimage/products/unsplash_yrxuxvy4sq4.png",
+      "/tempimage/products/unsplash_ywrybp-6p8c.png",
+      "/tempimage/products/xuongrong.png"
+    ],
+    "stock": 6,
+    "botanical": {
+      "common_name": "Hoya",
+      "scientific_name": "Hoya xfbcbb0",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "103 cm",
+      "care_tips": "Allow topsoil to dry between waterings. Keep away from drafts and extreme temperatures. Water: High (several times/week)."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  },
+  {
+    "id": 50,
+    "title": "Aloe Vera Baby",
+    "pricevnd": 1145000.0,
+    "currency": "VND",
+    "sku": "PL-41CBF3",
+    "category": "Cây lọc không khí",
+    "description": "Cây trang trí phù hợp gia đình và văn phòng, dễ chăm sóc.",
+    "longdescription": "Cây xanh mang lại không gian tươi mát, phù hợp trang trí và làm quà tặng.",
+    "images": [
+      "/tempimage/servicepage/frame 17.png",
+      "/tempimage/servicepage/frame 18.png",
+      "/tempimage/servicepage/frame 19.png",
+      "/tempimage/cattia.png",
+      "/tempimage/chatha.png"
+    ],
+    "stock": 32,
+    "botanical": {
+      "common_name": "Aloe Vera",
+      "scientific_name": "Aloe xdc8695",
+      "watering": "Tưới lượng vừa phải",
+      "sunlight": "Ánh sáng gián tiếp hoặc tự nhiên",
+      "size_at_maturity": "24 cm",
+      "care_tips": "Water: Regular (2–3 times/week). Place Aloe Vera in low light / shade. Allow topsoil to dry between waterings."
+    },
+    "created_at": "2025-10-19T11:34:28",
+    "updated_at": "2025-10-19T11:34:28"
+  }
+]

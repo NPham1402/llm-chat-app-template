@@ -6,8 +6,8 @@
     <title>LLM Chat App</title>
     <style>
       :root {
-        --primary-color: #f6821f;
-        --primary-hover: #e67e22;
+        --primary-color:  #4CAF50;
+        --primary-hover:  #4CAF50;
         --light-bg: #f9fafb;
         --border-color: #e5e7eb;
         --text-color: #1f2937;
@@ -80,6 +80,35 @@
         align-self: flex-start;
       }
 
+      /* Markdown table styling */
+      .message table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+      }
+
+      .message table th,
+      .message table td {
+        border: 1px solid var(--border-color);
+        padding: 0.5rem;
+        text-align: left;
+      }
+
+      .message table th {
+        background-color: var(--primary-color);
+        color: white;
+        font-weight: 600;
+      }
+
+      .message table tr:nth-child(even) {
+        background-color: rgba(0, 0, 0, 0.02);
+      }
+
+      .message p {
+        margin: 0.5rem 0;
+      }
+
       .message-input {
         display: flex;
         padding: 0.75rem;
@@ -138,16 +167,14 @@
   </head>
   <body>
     <header>
-      <h1>Cloudflare AI Chat</h1>
-      <p>Powered by Cloudflare Workers AI</p>
+      <h1>Nông Lâm Viên ChatBox</h1>
     </header>
 
     <div class="chat-container">
       <div id="chat-messages" class="chat-messages">
         <div class="message assistant-message">
           <p>
-            Hello! I'm an LLM chat app powered by Cloudflare Workers AI. How can
-            I help you today?
+            Xin chào tôi là AI được Nông Lâm Viên phát triển, Tôi có thể giúp gì cho bạn ?
           </p>
         </div>
       </div>
@@ -168,9 +195,11 @@
     </div>
 
     <footer>
-      <p>Cloudflare Workers AI Chat Template &copy; 2025</p>
+      <p>Nông lâm viên chatbox &copy; 2025</p>
     </footer>
 
+    <!-- Markdown parser library -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <!-- Chat app script -->
     <script src="chat.js"></script>
   </body>

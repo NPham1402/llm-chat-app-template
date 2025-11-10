@@ -15,10 +15,18 @@ let chatHistory = [
   {
     role: "assistant",
     content:
-      "Hello! I'm an LLM chat app powered by Cloudflare Workers AI. How can I help you today?",
+      "Xin chào! Tôi là AI được Nông Lâm Viên phát triển. Tôi có thể giúp gì cho bạn?",
   },
 ];
 let isProcessing = false;
+
+// Configure marked.js for better table support
+if (typeof marked !== 'undefined') {
+  marked.setOptions({
+    breaks: true,
+    gfm: true, // GitHub Flavored Markdown (supports tables)
+  });
+}
 
 // Auto-resize textarea as user types
 userInput.addEventListener("input", function () {
@@ -36,6 +44,17 @@ userInput.addEventListener("keydown", function (e) {
 
 // Send button click handler
 sendButton.addEventListener("click", sendMessage);
+
+/**
+ * Renders Markdown content to HTML
+ */
+function renderMarkdown(content) {
+  if (typeof marked !== 'undefined') {
+    return marked.parse(content);
+  }
+  // Fallback if marked.js is not loaded
+  return `<p>${content.replace(/\n/g, '<br>')}</p>`;
+}
 
 /**
  * Sends a message to the chat API and processes the response
@@ -68,7 +87,6 @@ async function sendMessage() {
     // Create new assistant response element
     const assistantMessageEl = document.createElement("div");
     assistantMessageEl.className = "message assistant-message";
-    assistantMessageEl.innerHTML = "<p></p>";
     chatMessages.appendChild(assistantMessageEl);
 
     // Scroll to bottom
@@ -113,13 +131,16 @@ async function sendMessage() {
           if (jsonData.response) {
             // Append new content to existing text
             responseText += jsonData.response;
-            assistantMessageEl.querySelector("p").textContent = responseText;
+            
+            // Render Markdown to HTML
+            assistantMessageEl.innerHTML = renderMarkdown(responseText);
 
             // Scroll to bottom
             chatMessages.scrollTop = chatMessages.scrollHeight;
           }
         } catch (e) {
-          console.error("Error parsing JSON:", e);
+          // Skip lines that aren't valid JSON
+          continue;
         }
       }
     }
@@ -130,7 +151,7 @@ async function sendMessage() {
     console.error("Error:", error);
     addMessageToChat(
       "assistant",
-      "Sorry, there was an error processing your request.",
+      "Xin lỗi, đã có lỗi xảy ra khi xử lý yêu cầu của bạn.",
     );
   } finally {
     // Hide typing indicator
@@ -150,7 +171,15 @@ async function sendMessage() {
 function addMessageToChat(role, content) {
   const messageEl = document.createElement("div");
   messageEl.className = `message ${role}-message`;
-  messageEl.innerHTML = `<p>${content}</p>`;
+  
+  if (role === "assistant") {
+    // Render Markdown for assistant messages
+    messageEl.innerHTML = renderMarkdown(content);
+  } else {
+    // Plain text for user messages
+    messageEl.innerHTML = `<p>${content.replace(/\n/g, '<br>')}</p>`;
+  }
+  
   chatMessages.appendChild(messageEl);
 
   // Scroll to bottom
