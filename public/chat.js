@@ -1,5 +1,5 @@
 /**
- * LLM Chat App Frontend
+ * LLM Chat App Frontend (Vanilla JS + Tailwind)
  *
  * Handles the chat UI interactions and communication with the backend API.
  */
@@ -14,11 +14,11 @@ const typingIndicator = document.getElementById("typing-indicator");
 let chatHistory = [
   {
     role: "assistant",
-    content:
-      "Xin chào! Tôi là AI được Nông Lâm Viên phát triển. Tôi có thể giúp gì cho bạn?",
+    content: "Xin chào! Tôi là AI được Nông Lâm Viên phát triển. Tôi có thể giúp gì cho bạn?",
   },
 ];
 let isProcessing = false;
+let abortController = null;
 
 // Configure marked.js for better table support
 if (typeof marked !== 'undefined') {
@@ -31,7 +31,7 @@ if (typeof marked !== 'undefined') {
 // Auto-resize textarea as user types
 userInput.addEventListener("input", function () {
   this.style.height = "auto";
-  this.style.height = this.scrollHeight + "px";
+  this.style.height = Math.min(this.scrollHeight, 200) + "px";
 });
 
 // Send message on Enter (without Shift)
@@ -78,15 +78,27 @@ async function sendMessage() {
   userInput.style.height = "auto";
 
   // Show typing indicator
-  typingIndicator.classList.add("visible");
+  typingIndicator.style.display = "block";
 
   // Add message to history
   chatHistory.push({ role: "user", content: message });
 
+  // Abort previous request if exists
+  if (abortController) {
+    abortController.abort();
+  }
+  abortController = new AbortController();
+
   try {
     // Create new assistant response element
     const assistantMessageEl = document.createElement("div");
-    assistantMessageEl.className = "message assistant-message";
+    assistantMessageEl.className = "flex justify-start";
+    assistantMessageEl.innerHTML = `
+      <div class="max-w-[80%] rounded-lg px-4 py-3 bg-gray-100 text-gray-800">
+        <div class="markdown-content"></div>
+      </div>
+    `;
+    const contentEl = assistantMessageEl.querySelector('.markdown-content');
     chatMessages.appendChild(assistantMessageEl);
 
     // Scroll to bottom
@@ -101,6 +113,7 @@ async function sendMessage() {
       body: JSON.stringify({
         messages: chatHistory,
       }),
+      signal: abortController.signal,
     });
 
     // Handle errors
@@ -117,6 +130,7 @@ async function sendMessage() {
       const { done, value } = await reader.read();
 
       if (done) {
+        reader.releaseLock();
         break;
       }
 
@@ -133,7 +147,7 @@ async function sendMessage() {
             responseText += jsonData.response;
             
             // Render Markdown to HTML
-            assistantMessageEl.innerHTML = renderMarkdown(responseText);
+            contentEl.innerHTML = renderMarkdown(responseText);
 
             // Scroll to bottom
             chatMessages.scrollTop = chatMessages.scrollHeight;
@@ -148,20 +162,23 @@ async function sendMessage() {
     // Add completed response to chat history
     chatHistory.push({ role: "assistant", content: responseText });
   } catch (error) {
-    console.error("Error:", error);
-    addMessageToChat(
-      "assistant",
-      "Xin lỗi, đã có lỗi xảy ra khi xử lý yêu cầu của bạn.",
-    );
+    if (error.name !== 'AbortError') {
+      console.error("Error:", error);
+      addMessageToChat(
+        "assistant",
+        "Xin lỗi, đã có lỗi xảy ra khi xử lý yêu cầu của bạn.",
+      );
+    }
   } finally {
     // Hide typing indicator
-    typingIndicator.classList.remove("visible");
+    typingIndicator.style.display = "none";
 
     // Re-enable input
     isProcessing = false;
     userInput.disabled = false;
     sendButton.disabled = false;
     userInput.focus();
+    abortController = null;
   }
 }
 
@@ -169,16 +186,20 @@ async function sendMessage() {
  * Helper function to add message to chat
  */
 function addMessageToChat(role, content) {
+  const isUser = role === "user";
   const messageEl = document.createElement("div");
-  messageEl.className = `message ${role}-message`;
+  messageEl.className = `flex ${isUser ? 'justify-end' : 'justify-start'}`;
   
-  if (role === "assistant") {
-    // Render Markdown for assistant messages
-    messageEl.innerHTML = renderMarkdown(content);
-  } else {
-    // Plain text for user messages
-    messageEl.innerHTML = `<p>${content.replace(/\n/g, '<br>')}</p>`;
-  }
+  const bgColor = isUser ? 'bg-orange-50' : 'bg-gray-100';
+  const renderedContent = isUser 
+    ? `<p>${content.replace(/\n/g, '<br>')}</p>`
+    : renderMarkdown(content);
+  
+  messageEl.innerHTML = `
+    <div class="max-w-[80%] rounded-lg px-4 py-3 ${bgColor} text-gray-800">
+      <div class="markdown-content">${renderedContent}</div>
+    </div>
+  `;
   
   chatMessages.appendChild(messageEl);
 

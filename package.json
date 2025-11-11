@@ -20,17 +20,31 @@
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "0.8.44",
     "@cloudflare/workers-types": "^4.20250425.0",
+    "@sveltejs/vite-plugin-svelte": "^3.1.2",
+    "@tailwindcss/postcss": "^4.1.17",
     "@types/node": "24.0.4",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "svelte": "^4.2.20",
+    "tailwindcss": "^3.4.18",
     "typescript": "5.8.3",
+    "vite": "^5.4.21",
     "vitest": "3.2.4",
     "wrangler": "4.21.x"
   },
   "scripts": {
     "cf-typegen": "wrangler types",
     "check": "tsc --noEmit && wrangler deploy --dry-run",
-    "deploy": "wrangler deploy",
+    "build": "cd app && npm run build",
     "dev": "wrangler dev",
+    "dev:frontend": "cd app && npm run dev",
+    "deploy": "npm run build && wrangler deploy",
     "start": "wrangler dev",
-    "test": "vitest"
+    "test": "vitest",
+    "install:all": "npm install && cd app && npm install"
+  },
+  "dependencies": {
+    "hono": "^4.10.4",
+    "marked": "^17.0.0"
   }
 }

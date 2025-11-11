@@ -1,12 +1,13 @@
 /**
  * LLM Chat Application Template
  *
- * A simple chat application using Cloudflare Workers AI.
+ * A simple chat application using Cloudflare Workers AI with Hono framework.
  * This template demonstrates how to implement an LLM-powered chat interface with
  * streaming responses using Server-Sent Events (SSE).
  *
  * @license MIT
  */
+import { Hono } from "hono";
 import { Env, ChatMessage } from "./types";
 
 // Model ID for Workers AI model
@@ -21,16 +22,20 @@ const SYSTEM_PROMPT =
   "Bạn là chuyên viên tư vấn sản phẩm cây cảnh tại Nông Lâm Viên.\n\n" +
   
   "**QUY TẮC BẮT BUỘC:**\n" +
-  "1. Khi liệt kê TỪ 2 SẢN PHẨM TRỞ LÊN, BẮT BUỘC dùng bảng Markdown:\n\n" +
+  "1. TUYỆT ĐỐI KHÔNG BỊA ĐẶT thông tin. Chỉ trả lời dựa trên dữ liệu sản phẩm được cung cấp.\n" +
+  "2. Nếu không tìm thấy thông tin trong dữ liệu, trả lời: 'Tôi không có dữ liệu về vấn đề này.'\n" +
+  "3. KHÔNG đoán giá, tồn kho, mô tả, hoặc bất kỳ thông tin nào không có trong dữ liệu.\n" +
+  "4. KHÔNG tạo ra tên sản phẩm, chính sách, hoặc thông tin doanh nghiệp nếu không được cung cấp.\n\n" +
+  
+  "5. Khi liệt kê TỪ 2 SẢN PHẨM TRỞ LÊN, BẮT BUỘC dùng bảng Markdown:\n\n" +
   "```\n" +
   "| Tên sản phẩm | Giá (VND) | Tồn kho |\n" +
   "|--------------|-----------|----------|\n" +
   "| Succulent Mix Baby | 794,000 | 99 |\n" +
   "| Jade Plant Baby | 516,000 | 53 |\n" +
   "```\n\n" +
-  "2. TUYỆT ĐỐI KHÔNG viết dạng paragraph khi liệt kê nhiều sản phẩm\n" +
-  "3. Khi khách hỏi về 1 sản phẩm cụ thể (có ID hoặc tên chính xác), mới viết chi tiết dạng text\n" +
-  "4. Chỉ cung cấp thông tin từ dữ liệu sản phẩm có sẵn\n\n" +
+  "6. TUYỆT ĐỐI KHÔNG viết dạng paragraph khi liệt kê nhiều sản phẩm\n" +
+  "7. Khi khách hỏi về 1 sản phẩm cụ thể (có ID hoặc tên chính xác), mới viết chi tiết dạng text\n\n" +
   
   "**Ví dụ đúng:**\n" +
   "User: 'Tìm cây Baby'\n" +
@@ -41,56 +46,27 @@ const SYSTEM_PROMPT =
   "| Jade Plant Baby | 516,000 | 53 |\n\n" +
   "Bạn muốn xem chi tiết sản phẩm nào?'\n\n" +
   
+  "User: 'Chính sách bảo hành là gì?'\n" +
+  "Assistant: 'Tôi không có dữ liệu về chính sách bảo hành. Nếu bạn cần thông tin này, vui lòng liên hệ với bộ phận hỗ trợ khách hàng. Xin cám ơn.'\n\n" +
+  
   "**Ví dụ sai (KHÔNG làm thế này):**\n" +
   "User: 'Tìm cây Baby'\n" +
   "Assistant: '**Succulent Mix Baby** (id: 44) - Giá: 794.000 VND...' ❌\n\n" +
+  "User: 'Chính sách đổi trả?'\n" +
+  "Assistant: 'Chúng tôi có chính sách đổi trả trong 7 ngày...' ❌ (BỊA ĐẶT)\n\n" +
   
   "Luôn trả lời bằng tiếng Việt, thân thiện và chuyên nghiệp.";
 
-export default {
-  /**
-   * Main request handler for the Worker
-   */
-  async fetch(
-    request: Request,
-    env: Env,
-    ctx: ExecutionContext,
-  ): Promise<Response> {
-    const url = new URL(request.url);
+// Create Hono app
+const app = new Hono<{ Bindings: Env }>();
 
-    // Handle static assets (frontend)
-    if (url.pathname === "/" || !url.pathname.startsWith("/api/")) {
-      return env.ASSETS.fetch(request);
-    }
-
-    // API Routes
-    if (url.pathname === "/api/chat") {
-      // Handle POST requests for chat
-      if (request.method === "POST") {
-        return handleChatRequest(request, env);
-      }
-
-      // Method not allowed for other request types
-      return new Response("Method not allowed", { status: 405 });
-    }
-
-    // Handle 404 for unmatched routes
-    return new Response("Not found", { status: 404 });
-  },
-} satisfies ExportedHandler<Env>;
-
-/**
- * Handles chat API requests
- */
-async function handleChatRequest(
-  request: Request,
-  env: Env,
-): Promise<Response> {
+// Chat API endpoint - must be before wildcard route
+app.post("/api/chat", async (c) => {
   try {
     // Parse JSON request body
-    const { messages = [] } = (await request.json()) as {
+    const { messages = [] } = await c.req.json<{
       messages: ChatMessage[];
-    };
+    }>();
 
     // Configurable limits
     const MAX_CONVERSATION_MESSAGES = 30;
@@ -154,7 +130,7 @@ async function handleChatRequest(
       ...keptConvo
     ];
 
-    const response = await env.AI.run(
+    const response = await c.env.AI.run(
       MODEL_ID,
       {
         messages: finalMessages,
@@ -168,12 +144,16 @@ async function handleChatRequest(
     return response;
   } catch (error) {
     console.error("Error processing chat request:", error);
-    return new Response(
-      JSON.stringify({ error: "Failed to process request" }),
-      {
-        status: 500,
-        headers: { "content-type": "application/json" },
-      },
+    return c.json(
+      { error: "Failed to process request" },
+      500
     );
   }
-}
+});
+
+// Serve static assets for all other routes
+app.get("*", async (c) => {
+  return c.env.ASSETS.fetch(c.req.raw);
+});
+
+export default app;
