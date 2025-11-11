@@ -1,23 +1,11 @@
-/**
- * LLM Chat Application Template
- *
- * A simple chat application using Cloudflare Workers AI with Hono framework.
- * This template demonstrates how to implement an LLM-powered chat interface with
- * streaming responses using Server-Sent Events (SSE).
- *
- * @license MIT
- */
 import { Hono } from "hono";
 import { Env, ChatMessage } from "./types";
 
-// Model ID for Workers AI model
-// https://developers.cloudflare.com/workers-ai/models/
+
 const MODEL_ID = "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
 
-// Import product data
 import productData from "../data/TempProduct.json";
 
-// Default system prompt
 const SYSTEM_PROMPT =
   "Bạn là chuyên viên tư vấn sản phẩm cây cảnh tại Nông Lâm Viên.\n\n" +
   
@@ -25,25 +13,26 @@ const SYSTEM_PROMPT =
   "1. TUYỆT ĐỐI KHÔNG BỊA ĐẶT thông tin. Chỉ trả lời dựa trên dữ liệu sản phẩm được cung cấp.\n" +
   "2. Nếu không tìm thấy thông tin trong dữ liệu, trả lời: 'Tôi không có dữ liệu về vấn đề này.'\n" +
   "3. KHÔNG đoán giá, tồn kho, mô tả, hoặc bất kỳ thông tin nào không có trong dữ liệu.\n" +
-  "4. KHÔNG tạo ra tên sản phẩm, chính sách, hoặc thông tin doanh nghiệp nếu không được cung cấp.\n\n" +
-  
-  "5. Khi liệt kê TỪ 2 SẢN PHẨM TRỞ LÊN, BẮT BUỘC dùng bảng Markdown:\n\n" +
+  "4. KHÔNG tạo ra tên sản phẩm, chính sách, hoặc thông tin doanh nghiệp nếu không được cung cấp.\n" +
+  "5. TUYỆT ĐỐI KHÔNG báo số lượng tồn kho cụ thể. Chỉ trả lời 'Còn hàng' nếu stock > 0, hoặc 'Hết hàng' nếu stock = 0.\n\n" +
+  "6. Khi liệt kê TỪ 2 SẢN PHẨM TRỞ LÊN, BẮT BUỘC dùng bảng Markdown:\n\n" +
+  "7. Nếu khách hàng nhập thông tin là mã ID sản phẩm (ví dụ: '44', 'PL-83F0B7'), hoặc nhập gần giống mã ID, tuyệt đối KHÔNG được trả về bất kỳ dữ liệu nào về sản phẩm đó. Chỉ trả về dữ liệu khi khách hỏi bằng tên sản phẩm chính xác.\n\n" +
   "```\n" +
-  "| Tên sản phẩm | Giá (VND) | Tồn kho |\n" +
-  "|--------------|-----------|----------|\n" +
-  "| Succulent Mix Baby | 794,000 | 99 |\n" +
-  "| Jade Plant Baby | 516,000 | 53 |\n" +
+  "| Tên sản phẩm | Giá (VND) | Tình trạng |\n" +
+  "|--------------|-----------|------------|\n" +
+  "| Succulent Mix Baby | 794,000 | Còn hàng |\n" +
+  "| Jade Plant Baby | 516,000 | Còn hàng |\n" +
   "```\n\n" +
-  "6. TUYỆT ĐỐI KHÔNG viết dạng paragraph khi liệt kê nhiều sản phẩm\n" +
-  "7. Khi khách hỏi về 1 sản phẩm cụ thể (có ID hoặc tên chính xác), mới viết chi tiết dạng text\n\n" +
+  "8. TUYỆT ĐỐI KHÔNG viết dạng paragraph khi liệt kê nhiều sản phẩm\n" +
+  "9. Khi khách hỏi về 1 sản phẩm cụ thể (có ID hoặc tên chính xác), mới viết chi tiết dạng text\n\n" +
   
   "**Ví dụ đúng:**\n" +
   "User: 'Tìm cây Baby'\n" +
   "Assistant: 'Tôi tìm thấy các sản phẩm:\n\n" +
-  "| Tên sản phẩm | Giá (VND) | Tồn kho |\n" +
-  "|--------------|-----------|----------|\n" +
-  "| Succulent Mix Baby | 794,000 | 99 |\n" +
-  "| Jade Plant Baby | 516,000 | 53 |\n\n" +
+  "| Tên sản phẩm | Giá (VND) | Tình trạng |\n" +
+  "|--------------|-----------|------------|\n" +
+  "| Succulent Mix Baby | 794,000 | Còn hàng |\n" +
+  "| Jade Plant Baby | 516,000 | Còn hàng |\n\n" +
   "Bạn muốn xem chi tiết sản phẩm nào?'\n\n" +
   
   "User: 'Chính sách bảo hành là gì?'\n" +
@@ -60,10 +49,8 @@ const SYSTEM_PROMPT =
 // Create Hono app
 const app = new Hono<{ Bindings: Env }>();
 
-// Chat API endpoint - must be before wildcard route
 app.post("/api/chat", async (c) => {
   try {
-    // Parse JSON request body
     const { messages = [] } = await c.req.json<{
       messages: ChatMessage[];
     }>();
@@ -103,12 +90,45 @@ app.post("/api/chat", async (c) => {
       },
       {
         role: "assistant",
-        content: "Tôi tìm thấy các sản phẩm phù hợp:\n\n| Tên sản phẩm | Giá (VND) | Tồn kho |\n|--------------|-----------|----------|\n| Succulent Mix Baby | 794,000 | 99 |\n| Jade Plant Baby | 516,000 | 53 |\n\nBạn muốn xem chi tiết sản phẩm nào?"
+        content: "Tôi tìm thấy các sản phẩm phù hợp:\n\n| Tên sản phẩm | Giá (VND) | Tình trạng |\n|--------------|-----------|------------|\n| Succulent Mix Baby | 794,000 | Còn hàng |\n| Jade Plant Baby | 516,000 | Còn hàng |\n\nBạn muốn xem chi tiết sản phẩm nào?"
       }
     ];
 
     // Filter out system messages from user input
     const convo = messages.filter((m) => m.role !== "system");
+
+    // Check if last user message contains product ID or SKU
+    if (convo.length > 0) {
+      const lastUserMessage = convo[convo.length - 1];
+      if (lastUserMessage.role === "user" && typeof lastUserMessage.content === "string") {
+        const userInput = lastUserMessage.content.trim();
+        
+        // Check if input matches any product ID or SKU
+        const containsProductId = validProducts.some((p: any) => {
+          const idStr = String(p.id);
+          const skuStr = String(p.sku || "");
+          
+          // Check exact match or if input is purely numeric and matches ID
+          return userInput === idStr || 
+                 userInput === skuStr ||
+                 (userInput.match(/^\d+$/) && userInput === idStr);
+        });
+        
+        if (containsProductId) {
+          // Return error message without calling AI
+          return new Response(
+            JSON.stringify({
+              response: "Xin lỗi, tôi không thể tra cứu sản phẩm bằng mã ID. Vui lòng nhập tên sản phẩm để tôi có thể hỗ trợ bạn tốt hơn."
+            }),
+            {
+              headers: {
+                "Content-Type": "application/json"
+              }
+            }
+          );
+        }
+      }
+    }
 
     // Trim messages
     const trimmedConvo = convo.map((m) => {
