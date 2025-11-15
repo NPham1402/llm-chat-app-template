@@ -14,7 +14,7 @@ jobs:
           node-version: '20'
       - run: npm install && cd app && npm install
       - run: cd app && npm run build
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: build-artifacts
           path: app/.svelte-kit/
@@ -37,7 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: build-artifacts
           path: app/.svelte-kit/
