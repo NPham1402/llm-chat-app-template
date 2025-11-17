@@ -1,0 +1,23 @@
+{
+  "name": "llm-chat-app-backend",
+  "version": "1.0.0",
+  "description": "Hono API backend on Cloudflare Workers",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "cf-typegen": "wrangler types",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "hono": "^4.10.4",
+    "marked": "^17.0.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250425.0",
+    "@types/node": "^24.0.4",
+    "typescript": "^5.8.3",
+    "wrangler": "^4.21.2"
+  }
+}

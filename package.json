@@ -1,50 +1,19 @@
 {
-  "name": "llm-chat-app-template",
-  "description": "A simple chat application powered by Cloudflare Workers AI",
+  "name": "llm-chat-app",
+  "version": "1.0.0",
+  "description": "LLM Chat App - Backend (Hono) + Frontend (Svelte)",
   "private": true,
-  "cloudflare": {
-    "label": "LLM Chat App",
-    "products": [
-      "Workers",
-      "Workers AI",
-      "AI Gateway"
-    ],
-    "categories": [
-      "ai"
-    ],
-    "docs_url": "https://developers.cloudflare.com/workers-ai/",
-    "preview_icon_url": "https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/a974bd55-20c6-4656-fa29-1551d43ddc00/public",
-    "preview_image_url": "https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/65dd8441-89d3-491d-c5a1-0a000d070700/preview",
-    "publish": true
-  },
-  "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "0.8.44",
-    "@cloudflare/workers-types": "^4.20250425.0",
-    "@sveltejs/vite-plugin-svelte": "^3.1.2",
-    "@tailwindcss/postcss": "^4.1.17",
-    "@types/node": "24.0.4",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "svelte": "^4.2.20",
-    "tailwindcss": "^3.4.18",
-    "typescript": "5.8.3",
-    "vite": "^5.4.21",
-    "vitest": "3.2.4",
-    "wrangler": "4.21.x"
-  },
   "scripts": {
-    "cf-typegen": "wrangler types",
-    "check": "tsc --noEmit && wrangler deploy --dry-run",
-    "build": "cd app && npm run build",
-    "dev": "wrangler dev",
-    "dev:frontend": "cd app && npm run dev",
-    "deploy": "npm run build && wrangler deploy",
-    "start": "wrangler dev",
-    "test": "vitest",
-    "install:all": "npm install && cd app && npm install"
-  },
-  "dependencies": {
-    "hono": "^4.10.4",
-    "marked": "^17.0.0"
+    "install": "npm install --prefix backend && npm install --prefix frontend",
+    "dev": "npm run dev:backend & npm run dev:frontend",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "cd backend && npm run check",
+    "build:frontend": "cd frontend && npm run build",
+    "deploy": "npm run deploy:backend && npm run deploy:frontend",
+    "deploy:backend": "cd backend && npm run deploy",
+    "deploy:frontend": "cd frontend && npx wrangler pages deploy dist --project-name=chatbox-clouflare-ai-frontend",
+    "clean": "rm -rf backend/node_modules frontend/node_modules backend/package-lock.json frontend/package-lock.json"
   }
 }

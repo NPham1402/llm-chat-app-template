@@ -1,9 +1,0 @@
-/**
- * Frontend Pages Configuration
- * Deploy to: Cloudflare Pages
- */
-{
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "llm-chat-app-frontend",
-  "type": "javascript"
-}
