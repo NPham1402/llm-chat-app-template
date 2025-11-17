@@ -37,12 +37,16 @@
     controller = new AbortController();
 
     try {
-      const response = await fetch("/api/chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: messages.slice(0, -1) }),
-        signal: controller.signal,
-      });
+      const response = await fetch(
+        "https://llm-chat-app-backend.npham140201.workers.dev/api/chat" ||
+          "/api/chat",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ messages: messages.slice(0, -1) }),
+          signal: controller.signal,
+        }
+      );
 
       if (!response.ok) throw new Error("Failed to get response");
 
@@ -100,8 +104,7 @@
 
 <div
   class="flex flex-col bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden"
-  style="height: calc(100vh - 200px); min-height: 400px;"
->
+  style="height: calc(100vh - 200px); min-height: 400px;">
   <MessageList {messages} {isProcessing} />
   <ChatInput on:send={handleSendMessage} disabled={isProcessing} />
 </div>

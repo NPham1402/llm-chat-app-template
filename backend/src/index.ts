@@ -1,6 +1,6 @@
 import { Hono } from "hono";
 import { Env, ChatMessage } from "./types";
-
+import { cors } from 'hono/cors';
 
 const MODEL_ID = "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
 
@@ -48,6 +48,12 @@ const SYSTEM_PROMPT =
 
 // Create Hono app
 const app = new Hono<{ Bindings: Env }>();
+
+app.use("*", cors({
+  origin: 'https://chatbox-clouflare-ai-frontend.pages.dev', // hoặc origin: '*'
+  allowMethods: ['GET', 'POST', 'OPTIONS'],
+  allowHeaders: ['Content-Type', 'Authorization'],
+}));
 
 app.post("/api/chat", async (c) => {
   try {
