@@ -37,17 +37,15 @@
     controller = new AbortController();
 
     try {
-      const response = await fetch(
-        "https://llm-chat-app-backend.npham140201.workers.dev/api/chat" ||
-          "/api/chat",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ messages: messages.slice(0, -1) }),
-          signal: controller.signal,
-        }
-      );
-
+      const API_URL =
+        "https://fantastic-happiness-6759pqq4wr6hr49g-8787.app.github.dev";
+      console.log("API_URL:", API_URL);
+      const response = await fetch(`${API_URL}/api/chat`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ messages: messages.slice(0, -1) }),
+        signal: controller.signal,
+      });
       if (!response.ok) throw new Error("Failed to get response");
 
       reader = response.body.getReader();

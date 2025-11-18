@@ -14,6 +14,14 @@
   "ai": {
     "binding": "AI"
   },
+  "d1_databases": [
+    {
+      "binding": "DB_chatbox", // tên biến dùng trong code
+      "database_name": "chat-box-ai", // tên D1 vừa tạo
+      "database_id": "0b7c69e2-bd9f-463c-8d38-abd8a88bf054",
+      "remote": true
+    }
+  ],
   "upload_source_maps": true,
   "build": {
     "command": "npm install"
