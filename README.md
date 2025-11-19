@@ -1,153 +1,371 @@
-# LLM Chat Application Template
+# 🌿 ChatBox - AI Tư Vấn Sản Phẩm Cây Cảnh
 
-A simple, ready-to-deploy chat application template powered by Cloudflare Workers AI. This template provides a clean starting point for building AI chat applications with streaming responses.
+Ứng dụng chatbot AI thông minh dành cho việc tư vấn và tra cứu sản phẩm cây cảnh, được xây dựng trên nền tảng Cloudflare Workers AI với model Llama 3.3.
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/templates/tree/main/llm-chat-app-template)
+## ✨ Tính Năng Nổi Bật
 
-<!-- dash-content-start -->
+- 🤖 **AI Chatbot thông minh**: Sử dụng Llama 3.3 70B của Cloudflare Workers AI
+- 💬 **Streaming Response**: Trả lời thời gian thực với Server-Sent Events
+- 🌱 **Tư vấn sản phẩm**: Tra cứu và tư vấn sản phẩm cây cảnh từ database
+- 📊 **Hiển thị bảng**: Tự động format kết quả nhiều sản phẩm dạng bảng Markdown
+- 🔒 **Bảo mật**: Chặn truy vấn bằng ID/SKU, không tiết lộ số lượng tồn kho chính xác
+- 📱 **Responsive**: Giao diện thân thiện trên mọi thiết bị
+- 🎨 **Modern UI**: Xây dựng với Svelte và TailwindCSS
+- ⚡ **Hiệu năng cao**: Deploy trên Cloudflare Edge Network
 
-## Demo
+## 🏗️ Kiến Trúc Hệ Thống
 
-This template demonstrates how to build an AI-powered chat interface using Cloudflare Workers AI with streaming responses. It features:
+### Backend
+- **Framework**: Hono (Web framework nhẹ cho Cloudflare Workers)
+- **AI Model**: Meta Llama 3.3 70B Instruct FP8 Fast
+- **Database**: Cloudflare D1 (SQLite)
+- **Hosting**: Cloudflare Workers
+- **Language**: TypeScript
 
-- Real-time streaming of AI responses using Server-Sent Events (SSE)
-- Easy customization of models and system prompts
-- Support for AI Gateway integration
-- Clean, responsive UI that works on mobile and desktop
+### Frontend
+- **Framework**: Svelte 4
+- **Build Tool**: Vite 5
+- **Styling**: TailwindCSS 3
+- **Routing**: svelte-routing
+- **Markdown**: marked (để render Markdown trong chat)
+- **Hosting**: Cloudflare Pages
 
-## Features
+## 📋 Yêu Cầu Hệ Thống
 
-- 💬 Simple and responsive chat interface
-- ⚡ Server-Sent Events (SSE) for streaming responses
-- 🧠 Powered by Cloudflare Workers AI LLMs
-- 🛠️ Built with TypeScript and Cloudflare Workers
-- 📱 Mobile-friendly design
-- 🔄 Maintains chat history on the client
-- 🔎 Built-in Observability logging
-<!-- dash-content-end -->
+- [Node.js](https://nodejs.org/) v18 trở lên
+- [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/install-and-update/) (Cloudflare CLI tool)
+- Tài khoản Cloudflare với quyền truy cập:
+  - Workers AI
+  - D1 Database
+  - Cloudflare Pages
 
-## Getting Started
+## 🚀 Cài Đặt và Chạy Dự Án
 
-### Prerequisites
+### 1. Clone Repository
 
-- [Node.js](https://nodejs.org/) (v18 or newer)
-- [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/install-and-update/)
-- A Cloudflare account with Workers AI access
+```bash
+git clone https://github.com/NPham1402/ChatBox_Clouflare_AI.git
+cd ChatBox_Clouflare_AI
+```
 
-### Installation
+### 2. Cài Đặt Dependencies
 
-1. Clone this repository:
+Cài đặt dependencies cho cả backend và frontend:
 
-   ```bash
-   git clone https://github.com/cloudflare/templates.git
-   cd templates/llm-chat-app
-   ```
+```bash
+npm run install
+```
 
-2. Install dependencies:
+Hoặc cài đặt riêng lẻ:
 
-   ```bash
-   npm install
-   ```
+```bash
+# Backend
+cd backend && npm install
 
-3. Generate Worker type definitions:
-   ```bash
-   npm run cf-typegen
-   ```
+# Frontend
+cd frontend && npm install
+```
 
-### Development
+### 3. Cấu Hình Database (D1)
 
-Start a local development server:
+Tạo D1 database trên Cloudflare:
+
+```bash
+cd backend
+wrangler d1 create chat-box-ai
+```
+
+Cập nhật `database_id` trong `backend/wrangler.jsonc` với ID nhận được.
+
+Tạo schema cho database (nếu cần):
+
+```sql
+-- Tạo bảng products
+CREATE TABLE products (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT NOT NULL,
+  price_vnd INTEGER,
+  category TEXT,
+  stock INTEGER,
+  description TEXT,
+  sku TEXT
+);
+
+-- Tạo bảng system_prompts (nếu cần)
+CREATE TABLE system_prompts (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  content TEXT NOT NULL,
+  version TEXT,
+  is_active INTEGER DEFAULT 1,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Các bảng khác theo nhu cầu...
+```
+
+### 4. Chạy Development Server
+
+Khởi động cả backend và frontend đồng thời:
 
 ```bash
 npm run dev
 ```
 
-This will start a local server at http://localhost:8787.
-
-Note: Using Workers AI accesses your Cloudflare account even during local development, which will incur usage charges.
-
-### Deployment
-
-Deploy to Cloudflare Workers:
+Hoặc chạy riêng lẻ:
 
 ```bash
+# Backend (port 8787)
+npm run dev:backend
+
+# Frontend (port 5173)
+npm run dev:frontend
+```
+
+- Backend API: http://localhost:8787
+- Frontend UI: http://localhost:5173
+
+**Lưu ý**: Khi chạy local, Workers AI vẫn sử dụng tài khoản Cloudflare của bạn và sẽ tính phí sử dụng.
+
+## 📦 Build và Deploy
+
+### Build Production
+
+```bash
+# Build tất cả
+npm run build
+
+# Build riêng lẻ
+npm run build:backend    # Type check backend
+npm run build:frontend   # Build frontend
+```
+
+### Deploy lên Cloudflare
+
+```bash
+# Deploy tất cả
 npm run deploy
+
+# Deploy riêng lẻ
+npm run deploy:backend   # Deploy Workers
+npm run deploy:frontend  # Deploy Pages
 ```
 
-### Monitor
+## 📁 Cấu Trúc Dự Án
 
-View real-time logs associated with any deployed Worker:
+```
+ChatBox_Clouflare_AI/
+├── backend/                      # Backend API (Cloudflare Workers)
+│   ├── src/
+│   │   ├── index.ts             # Entry point, định nghĩa API routes
+│   │   └── types.ts             # TypeScript type definitions
+│   ├── data/
+│   │   └── TempProduct.json     # Dữ liệu mẫu (nếu có)
+│   ├── wrangler.jsonc           # Cấu hình Cloudflare Workers
+│   ├── tsconfig.json            # TypeScript config
+│   └── package.json
+│
+├── frontend/                     # Frontend UI (Svelte)
+│   ├── src/
+│   │   ├── App.svelte           # Root component
+│   │   ├── main.js              # Entry point
+│   │   ├── components/          # Reusable components
+│   │   │   ├── ChatInput.svelte
+│   │   │   ├── ChatMessage.svelte
+│   │   │   ├── MessageList.svelte
+│   │   │   └── ChooseOption.svelte
+│   │   ├── routes/              # Route components
+│   │   │   ├── Chat.svelte
+│   │   │   └── Admin/
+│   │   │       └── AdminDetails.svelte
+│   │   └── options/             # Additional options components
+│   ├── index.html               # HTML template
+│   ├── vite.config.js           # Vite configuration
+│   ├── tailwind.config.js       # TailwindCSS config
+│   ├── svelte.config.js         # Svelte config
+│   └── package.json
+│
+├── package.json                  # Root package.json (scripts chung)
+└── README.md                     # Tài liệu này
+```
+
+## 🔌 API Endpoints
+
+### Chat API
+
+**POST** `/api/chat`
+
+Gửi tin nhắn và nhận phản hồi từ AI.
+
+```json
+// Request
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Tôi muốn tìm cây Snake Plant"
+    }
+  ]
+}
+
+// Response (streaming)
+{
+  "response": "Markdown formatted response..."
+}
+```
+
+### Products API
+
+**GET** `/api/products`
+
+Lấy danh sách tất cả sản phẩm.
+
+```json
+// Response
+[
+  {
+    "id": 1,
+    "title": "Snake Plant Mini",
+    "price_vnd": 910000,
+    "category": "Cây Để Bàn",
+    "stock": 5,
+    "description": "Cây lưỡi hổ mini...",
+    "sku": "PL-001"
+  }
+]
+```
+
+**POST** `/api/products`
+
+Thêm sản phẩm mới (cần authentication - tùy implementation).
+
+```json
+// Request
+{
+  "title": "ZZ Plant",
+  "price_vnd": 850000,
+  "category": "Cây Để Bàn",
+  "stock": 10,
+  "description": "Cây kim tiền...",
+  "sku": "PL-002"
+}
+```
+
+### Prompts API
+
+**GET** `/api/prompts/:id`
+
+Lấy system prompt và rules của AI.
+
+```json
+// Response
+{
+  "prompt": {
+    "content": "Bạn là chuyên viên tư vấn..."
+  },
+  "rules": [...],
+  "context": [...]
+}
+```
+
+## ⚙️ Cấu Hình
+
+### Backend Configuration
+
+Chỉnh sửa `backend/wrangler.jsonc`:
+
+```jsonc
+{
+  "name": "llm-chat-app-backend",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-10-08",
+  "ai": {
+    "binding": "AI"  // Workers AI binding
+  },
+  "d1_databases": [
+    {
+      "binding": "DB_chatbox",
+      "database_name": "chat-box-ai",
+      "database_id": "YOUR_DATABASE_ID"
+    }
+  ]
+}
+```
+
+### AI Model Configuration
+
+Thay đổi model trong `backend/src/index.ts`:
+
+```typescript
+const MODEL_ID = "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
+```
+
+Các model khác có sẵn: [Cloudflare Workers AI Models](https://developers.cloudflare.com/workers-ai/models/)
+
+### System Prompt
+
+Tùy chỉnh behavior của AI bằng cách sửa `SYSTEM_PROMPT` object trong `backend/src/index.ts`. Prompt system bao gồm:
+- **prompt.content**: Vai trò của AI
+- **rules**: Các quy tắc hành vi (format response, bảo mật, etc.)
+- **context**: Templates và thông tin bổ sung
+
+## 🛠️ Development Tips
+
+### Debugging
+
+Xem logs của Worker:
 
 ```bash
-npm wrangler tail
+cd backend
+wrangler tail
 ```
 
-## Project Structure
+### Type Generation
 
-```
-/
-├── public/             # Static assets
-│   ├── index.html      # Chat UI HTML
-│   └── chat.js         # Chat UI frontend script
-├── src/
-│   ├── index.ts        # Main Worker entry point
-│   └── types.ts        # TypeScript type definitions
-├── test/               # Test files
-├── wrangler.jsonc      # Cloudflare Worker configuration
-├── tsconfig.json       # TypeScript configuration
-└── README.md           # This documentation
+Generate TypeScript types từ Wrangler:
+
+```bash
+cd backend
+npm run cf-typegen
 ```
 
-## How It Works
+### Clean Install
 
-### Backend
+Xóa và cài lại dependencies:
 
-The backend is built with Cloudflare Workers and uses the Workers AI platform to generate responses. The main components are:
+```bash
+npm run clean
+npm run install
+```
 
-1. **API Endpoint** (`/api/chat`): Accepts POST requests with chat messages and streams responses
-2. **Streaming**: Uses Server-Sent Events (SSE) for real-time streaming of AI responses
-3. **Workers AI Binding**: Connects to Cloudflare's AI service via the Workers AI binding
+## 🔐 Tính Năng Bảo Mật
 
-### Frontend
+1. **Chặn truy vấn ID**: Không cho phép tra cứu sản phẩm bằng ID hoặc SKU số
+2. **Giới hạn thông tin**: Không tiết lộ số lượng tồn kho chính xác
+3. **Rate limiting**: Có thể cấu hình qua AI Gateway
+4. **CORS**: Đã cấu hình CORS cho phép frontend gọi API
 
-The frontend is a simple HTML/CSS/JavaScript application that:
-
-1. Presents a chat interface
-2. Sends user messages to the API
-3. Processes streaming responses in real-time
-4. Maintains chat history on the client side
-
-## Customization
-
-### Changing the Model
-
-To use a different AI model, update the `MODEL_ID` constant in `src/index.ts`. You can find available models in the [Cloudflare Workers AI documentation](https://developers.cloudflare.com/workers-ai/models/).
-
-### Using AI Gateway
-
-The template includes commented code for AI Gateway integration, which provides additional capabilities like rate limiting, caching, and analytics.
-
-To enable AI Gateway:
-
-1. [Create an AI Gateway](https://dash.cloudflare.com/?to=/:account/ai/ai-gateway) in your Cloudflare dashboard
-2. Uncomment the gateway configuration in `src/index.ts`
-3. Replace `YOUR_GATEWAY_ID` with your actual AI Gateway ID
-4. Configure other gateway options as needed:
-   - `skipCache`: Set to `true` to bypass gateway caching
-   - `cacheTtl`: Set the cache time-to-live in seconds
-
-Learn more about [AI Gateway](https://developers.cloudflare.com/ai-gateway/).
-
-### Modifying the System Prompt
-
-The default system prompt can be changed by updating the `SYSTEM_PROMPT` constant in `src/index.ts`.
-
-### Styling
-
-The UI styling is contained in the `<style>` section of `public/index.html`. You can modify the CSS variables at the top to quickly change the color scheme.
-
-## Resources
+## 📚 Tài Nguyên
 
 - [Cloudflare Workers Documentation](https://developers.cloudflare.com/workers/)
-- [Cloudflare Workers AI Documentation](https://developers.cloudflare.com/workers-ai/)
-- [Workers AI Models](https://developers.cloudflare.com/workers-ai/models/)
+- [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/)
+- [Cloudflare D1 Database](https://developers.cloudflare.com/d1/)
+- [Hono Framework](https://hono.dev/)
+- [Svelte Documentation](https://svelte.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+
+## 📝 License
+
+[Add your license here]
+
+## 👤 Tác Giả
+
+NPham1402
+
+## 🤝 Đóng Góp
+
+Contributions, issues và feature requests luôn được chào đón!
+
+---
+
+**Happy Coding! 🚀**
