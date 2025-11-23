@@ -1,38 +1,20 @@
 <script>
   import { Router, Route, Link } from "svelte-routing";
   import Chat from "./routes/Chat.svelte";
-  import DashboardLayout from "./layouts/DashboardLayout.svelte";
-  import Dashboard from "./routes/admin/Dashboard.svelte";
-  import Products from "./routes/admin/Products.svelte";
-  import Prompts from "./routes/admin/Prompts.svelte";
-  import Rules from "./routes/admin/Rules.svelte";
+  import FlowbiteDemo from "./routes/FlowbiteDemo.svelte";
+  import AdminDashboard from "./routes/AdminDashboard.svelte";
   export let url = "";
 </script>
 
 <Router {url}>
-  <!-- Admin routes with dashboard layout -->
-  <Route path="/admin/dashboard">
-    <DashboardLayout>
-      <Dashboard />
-    </DashboardLayout>
+  <!-- Admin Dashboard route -->
+  <Route path="/admin">
+    <AdminDashboard />
   </Route>
-  
-  <Route path="/admin/products">
-    <DashboardLayout>
-      <Products />
-    </DashboardLayout>
-  </Route>
-  
-  <Route path="/admin/prompts">
-    <DashboardLayout>
-      <Prompts />
-    </DashboardLayout>
-  </Route>
-  
-  <Route path="/admin/rules">
-    <DashboardLayout>
-      <Rules />
-    </DashboardLayout>
+
+  <!-- Flowbite Demo route -->
+  <Route path="/demo">
+    <FlowbiteDemo />
   </Route>
 
   <!-- Public chat route -->
@@ -44,9 +26,6 @@
             <h1 class="text-xl font-bold text-green-600">
               Nông Lâm Viên ChatBox
             </h1>
-          </Link>
-          <Link to="/admin/dashboard" class="text-sm text-gray-600 hover:text-green-600">
-            Admin
           </Link>
         </div>
       </header>
@@ -66,12 +45,15 @@
     <div class="min-h-screen flex items-center justify-center bg-gray-50">
       <div class="text-center">
         <h1 class="text-4xl font-bold text-green-600 mb-4">Nông Lâm Viên</h1>
-        <div class="space-x-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
           <Link to="/chat" class="inline-block px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700">
             Chat
           </Link>
-          <Link to="/admin/dashboard" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
-            Admin
+          <Link to="/demo" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+            Flowbite Demo
+          </Link>
+          <Link to="/admin" class="inline-block px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700">
+            Admin Dashboard
           </Link>
         </div>
       </div>
